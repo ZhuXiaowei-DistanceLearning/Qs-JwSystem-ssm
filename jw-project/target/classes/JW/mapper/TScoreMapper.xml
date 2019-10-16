@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="JW.mapper.TScoreMapper">
+	<resultMap id="BaseResultMap" type="JW.pojo.TScore">
+		<id column="Student_id" property="studentId" jdbcType="VARCHAR" />
+		<id column="course_id" property="courseId" jdbcType="VARCHAR" />
+		<result column="peaceTime" property="peacetime" jdbcType="VARCHAR" />
+		<result column="endTime" property="endtime" jdbcType="VARCHAR" />
+		<result column="score" property="score" jdbcType="VARCHAR" />
+		<result column="absent" property="absent" jdbcType="VARCHAR" />
+	</resultMap>
+	<resultMap id="ManyResultMap" type="JW.pojo.TScore">
+		<id column="Student_id" property="studentId" jdbcType="VARCHAR" />
+		<id column="course_id" property="courseId" jdbcType="VARCHAR" />
+		<result column="peaceTime" property="peacetime" jdbcType="VARCHAR" />
+		<result column="endTime" property="endtime" jdbcType="VARCHAR" />
+		<result column="score" property="score" jdbcType="VARCHAR" />
+		<result column="absent" property="absent" jdbcType="VARCHAR" />
+		<association property="students" javaType="JW.pojo.TStudent">
+			<id column="sid" property="sid" jdbcType="VARCHAR" />
+			<result column="password" property="password" jdbcType="VARCHAR" />
+			<result column="sname" property="sname" jdbcType="VARCHAR" />
+			<result column="sex" property="sex" jdbcType="VARCHAR" />
+			<result column="scity" property="scity" jdbcType="VARCHAR" />
+			<result column="qx" property="qx" jdbcType="VARCHAR" />
+			<result column="classes_id" property="classesId" jdbcType="VARCHAR" />
+			<result column="absent" property="absent" jdbcType="INTEGER" />
+			<association property="classes" javaType="JW.pojo.TClasses">
+				<id column="id" property="id" jdbcType="VARCHAR" />
+				<result column="classname" property="classname" jdbcType="VARCHAR" />
+				<association property="tSpecialty" javaType="JW.pojo.TSpecialty">
+					<result column="spname" property="name" jdbcType="VARCHAR" />
+					<association property="college" javaType="JW.pojo.TCollege">
+						<result column="cname" property="name" jdbcType="VARCHAR" />
+					</association>
+				</association>
+			</association>
+		</association>
+		<association property="course" javaType="JW.pojo.TCourse">
+			<id column="id" property="id" jdbcType="VARCHAR" />
+			<result column="classname" property="name" jdbcType="VARCHAR" />
+			<result column="credit" property="credit" jdbcType="INTEGER" />
+			<result column="classroom" property="classroom" jdbcType="VARCHAR" />
+			<result column="people" property="people" jdbcType="INTEGER" />
+			<result column="section_id" property="sectionId" jdbcType="VARCHAR" />
+			<result column="week_id" property="weekId" jdbcType="VARCHAR" />
+			<result column="teacher_id" property="teacherId" jdbcType="VARCHAR" />
+			<result column="nature_id" property="natureId" jdbcType="VARCHAR" />
+			<result column="totalPeople" property="totalpeople" jdbcType="INTEGER" />
+			<association property="section" javaType="JW.pojo.TSection">
+				<result column="week" property="week" jdbcType="VARCHAR" />
+				<result column="section" property="section" jdbcType="VARCHAR" />
+			</association>
+			<association property="week" javaType="JW.pojo.TWeek">
+				<result column="time" property="time" jdbcType="VARCHAR" />
+			</association>
+			<association property="nature" javaType="JW.pojo.TNature">
+				<result column="name" property="name" jdbcType="VARCHAR" />
+			</association>
+			<association property="teacher" javaType="JW.pojo.TTeacher">
+				<result column="tname" property="tname" jdbcType="VARCHAR" />
+			</association>
+		</association>
+	</resultMap>
+	<resultMap id="TeacherResultMap" type="JW.pojo.TScore">
+		<id column="Student_id" property="studentId" jdbcType="VARCHAR" />
+		<id column="course_id" property="courseId" jdbcType="VARCHAR" />
+		<association property="students" javaType="JW.pojo.TStudent">
+			<id column="sid" property="sid" jdbcType="VARCHAR" />
+			<result column="password" property="password" jdbcType="VARCHAR" />
+			<result column="sname" property="sname" jdbcType="VARCHAR" />
+			<result column="sex" property="sex" jdbcType="VARCHAR" />
+			<result column="scity" property="scity" jdbcType="VARCHAR" />
+			<result column="qx" property="qx" jdbcType="VARCHAR" />
+			<result column="classes_id" property="classesId" jdbcType="VARCHAR" />
+			<result column="absent" property="absent" jdbcType="INTEGER" />
+			<association property="classes" javaType="JW.pojo.TClasses">
+				<id column="id" property="id" jdbcType="VARCHAR" />
+				<result column="classname" property="classname" jdbcType="VARCHAR" />
+				<association property="tSpecialty" javaType="JW.pojo.TSpecialty">
+					<result column="name" property="name" jdbcType="VARCHAR" />
+					<association property="college" javaType="JW.pojo.TCollege">
+						<result column="cname" property="name" jdbcType="VARCHAR" />
+					</association>
+				</association>
+			</association>
+		</association>
+	</resultMap>
+	<sql id="Example_Where_Clause">
+		<where>
+			<foreach collection="oredCriteria" item="criteria" separator="or">
+				<if test="criteria.valid">
+					<trim prefix="(" suffix=")" prefixOverrides="and">
+						<foreach collection="criteria.criteria" item="criterion">
+							<choose>
+								<when test="criterion.noValue">
+									and ${criterion.condition}
+								</when>
+								<when test="criterion.singleValue">
+									and ${criterion.condition} #{criterion.value}
+								</when>
+								<when test="criterion.betweenValue">
+									and ${criterion.condition} #{criterion.value}
+									and
+									#{criterion.secondValue}
+								</when>
+								<when test="criterion.listValue">
+									and ${criterion.condition}
+									<foreach collection="criterion.value" item="listItem"
+										open="(" close=")" separator=",">
+										#{listItem}
+									</foreach>
+								</when>
+							</choose>
+						</foreach>
+					</trim>
+				</if>
+			</foreach>
+		</where>
+	</sql>
+	<sql id="Update_By_Example_Where_Clause">
+		<where>
+			<foreach collection="example.oredCriteria" item="criteria"
+				separator="or">
+				<if test="criteria.valid">
+					<trim prefix="(" suffix=")" prefixOverrides="and">
+						<foreach collection="criteria.criteria" item="criterion">
+							<choose>
+								<when test="criterion.noValue">
+									and ${criterion.condition}
+								</when>
+								<when test="criterion.singleValue">
+									and ${criterion.condition} #{criterion.value}
+								</when>
+								<when test="criterion.betweenValue">
+									and ${criterion.condition} #{criterion.value}
+									and
+									#{criterion.secondValue}
+								</when>
+								<when test="criterion.listValue">
+									and ${criterion.condition}
+									<foreach collection="criterion.value" item="listItem"
+										open="(" close=")" separator=",">
+										#{listItem}
+									</foreach>
+								</when>
+							</choose>
+						</foreach>
+					</trim>
+				</if>
+			</foreach>
+		</where>
+	</sql>
+	<sql id="Base_Column_List">
+		Student_id, course_id, peaceTime, endTime, score, absent
+	</sql>
+	<!-- 查询出对应学生 -->
+	<select id="findStudentId" parameterType="java.lang.String"
+		resultMap="ManyResultMap">
+		SELECT DISTINCT s.*,t.`sid`,t.`sname`,t.`sex` FROM `t_score`
+		s LEFT JOIN `t_student` t ON s.`Student_id`=t.`sid` WHERE
+		s.`course_id`=#{value};
+	</select>
+	<!-- 查询学生是否含有本门课程 -->
+	<select id="findCourseStudentId" parameterType="java.lang.String"
+		resultMap="ManyResultMap">
+		SELECT * FROM `t_score` s LEFT JOIN `t_student` st ON
+		s.`Student_id`=st.`sid` WHERE st.`sid`=#{0} AND s.`course_id`=#{1}
+	</select>
+	<!-- 查询出对应学生 -->
+	<select id="findAllCourseByStudentId" parameterType="java.lang.String"
+		resultMap="ManyResultMap">
+		SELECT * FROM (`t_score` s,`t_student` st,`t_section`
+		se,`t_week`
+		w,`t_nature` n,`t_classes` cl,`t_college` co,`t_specialty`
+		sp)
+		LEFT JOIN `t_course` c ON
+		s.`course_id`=c.`id`
+		LEFT JOIN `t_teacher`
+		t ON c.`teacher_id`=t.`tid`
+		WHERE c.`nature_id`=n.`id` AND
+		c.`week_id`=w.`id` AND
+		c.`section_id`=se.`id` AND
+		st.`classes_id`=cl.`id` AND cl.`specialty_id` =sp.`id` AND
+		sp.`college_id` = co.`id` AND s.`Student_id`=st.`sid` AND
+		st.`sid`=#{value}
+	</select>
+	<!-- 查询学生个人成绩 -->
+	<select id="findStudentScore" parameterType="java.lang.String"
+		resultMap="ManyResultMap">
+		SELECT s.*,st.*,se.*,w.*,n.*,sp.`name` spname,co.`name`
+		cname,c.`name` classname
+		FROM (`t_score` s,`t_student` st,`t_section`
+		se,`t_week`
+		w,`t_nature`
+		n,`t_classes` cl,`t_college` co,`t_specialty`
+		sp)
+		LEFT JOIN `t_course` c
+		ON
+		s.`course_id`=c.`id`
+		WHERE
+		c.`nature_id`=n.`id` AND c.`week_id`=w.`id`
+		AND
+		c.`section_id`=se.`id`
+		AND st.`classes_id`=cl.`id` AND
+		cl.`specialty_id` =sp.`id` AND
+		sp.`college_id` = co.`id` AND
+		s.`Student_id`=st.`sid` AND
+		st.`sid`=#{value}
+	</select>
+	<!-- 添加课程成绩对应页面 -->
+	<select id="addStudentScore" parameterType="java.lang.String"
+		resultMap="TeacherResultMap">
+		SELECT DISTINCT s.*,st.*,c.`classname`,sp.`name`,cl.`name`
+		cname FROM `t_score` s LEFT JOIN `t_student` st ON
+		s.`Student_id`=st.`sid`
+		LEFT JOIN `t_classes` c ON
+		st.`classes_id`=c.`id`
+		LEFT JOIN `t_specialty` sp ON
+		c.`specialty_id`=sp.`id`
+		LEFT JOIN
+		`t_college` cl ON
+		sp.`college_id`=cl.`id` WHERE course_id = #{value}
+	</select>
+	<select id="selectByExample" resultMap="BaseResultMap"
+		parameterType="JW.pojo.TScoreExample">
+		select
+		<if test="distinct">
+			distinct
+		</if>
+		<include refid="Base_Column_List" />
+		from t_score
+		<if test="_parameter != null">
+			<include refid="Example_Where_Clause" />
+		</if>
+		<if test="orderByClause != null">
+			order by ${orderByClause}
+		</if>
+	</select>
+	<select id="selectByPrimaryKey" resultMap="BaseResultMap"
+		parameterType="JW.pojo.TScoreKey">
+		select
+		<include refid="Base_Column_List" />
+		from t_score
+		where Student_id = #{studentId,jdbcType=VARCHAR}
+		and course_id = #{courseId,jdbcType=VARCHAR}
+	</select>
+	<delete id="deleteByPrimaryKey" parameterType="JW.pojo.TScoreKey">
+		delete from t_score
+		where Student_id = #{studentId,jdbcType=VARCHAR}
+		and course_id = #{courseId,jdbcType=VARCHAR}
+	</delete>
+	<delete id="deleteByExample" parameterType="JW.pojo.TScoreExample">
+		delete from t_score
+		<if test="_parameter != null">
+			<include refid="Example_Where_Clause" />
+		</if>
+	</delete>
+	<insert id="insert" parameterType="JW.pojo.TScore">
+		insert into t_score (Student_id, course_id, peaceTime,
+		endTime, score, absent
+		)
+		values (#{studentId,jdbcType=VARCHAR}, #{courseId,jdbcType=VARCHAR},
+		#{peacetime,jdbcType=VARCHAR},
+		#{endtime,jdbcType=VARCHAR}, #{score,jdbcType=VARCHAR}, #{absent,jdbcType=VARCHAR}
+		)
+	</insert>
+	<insert id="insertSelective" parameterType="JW.pojo.TScore">
+		insert into t_score
+		<trim prefix="(" suffix=")" suffixOverrides=",">
+			<if test="studentId != null">
+				Student_id,
+			</if>
+			<if test="courseId != null">
+				course_id,
+			</if>
+			<if test="peacetime != null">
+				peaceTime,
+			</if>
+			<if test="endtime != null">
+				endTime,
+			</if>
+			<if test="score != null">
+				score,
+			</if>
+			<if test="absent != null">
+				absent,
+			</if>
+		</trim>
+		<trim prefix="values (" suffix=")" suffixOverrides=",">
+			<if test="studentId != null">
+				#{studentId,jdbcType=VARCHAR},
+			</if>
+			<if test="courseId != null">
+				#{courseId,jdbcType=VARCHAR},
+			</if>
+			<if test="peacetime != null">
+				#{peacetime,jdbcType=VARCHAR},
+			</if>
+			<if test="endtime != null">
+				#{endtime,jdbcType=VARCHAR},
+			</if>
+			<if test="score != null">
+				#{score,jdbcType=VARCHAR},
+			</if>
+			<if test="absent != null">
+				#{absent,jdbcType=VARCHAR},
+			</if>
+		</trim>
+	</insert>
+	<select id="countByExample" parameterType="JW.pojo.TScoreExample"
+		resultType="java.lang.Integer">
+		select count(*) from t_score
+		<if test="_parameter != null">
+			<include refid="Example_Where_Clause" />
+		</if>
+	</select>
+	<update id="updateByExampleSelective" parameterType="map">
+		update t_score
+		<set>
+			<if test="record.studentId != null">
+				Student_id = #{record.studentId,jdbcType=VARCHAR},
+			</if>
+			<if test="record.courseId != null">
+				course_id = #{record.courseId,jdbcType=VARCHAR},
+			</if>
+			<if test="record.peacetime != null">
+				peaceTime = #{record.peacetime,jdbcType=VARCHAR},
+			</if>
+			<if test="record.endtime != null">
+				endTime = #{record.endtime,jdbcType=VARCHAR},
+			</if>
+			<if test="record.score != null">
+				score = #{record.score,jdbcType=VARCHAR},
+			</if>
+			<if test="record.absent != null">
+				absent = #{record.absent,jdbcType=VARCHAR},
+			</if>
+		</set>
+		<if test="_parameter != null">
+			<include refid="Update_By_Example_Where_Clause" />
+		</if>
+	</update>
+	<update id="updateByExample" parameterType="map">
+		update t_score
+		set Student_id = #{record.studentId,jdbcType=VARCHAR},
+		course_id = #{record.courseId,jdbcType=VARCHAR},
+		peaceTime = #{record.peacetime,jdbcType=VARCHAR},
+		endTime = #{record.endtime,jdbcType=VARCHAR},
+		score = #{record.score,jdbcType=VARCHAR},
+		absent = #{record.absent,jdbcType=VARCHAR}
+		<if test="_parameter != null">
+			<include refid="Update_By_Example_Where_Clause" />
+		</if>
+	</update>
+	<update id="updateByPrimaryKeySelective" parameterType="JW.pojo.TScore">
+		update t_score
+		<set>
+			<if test="peacetime != null">
+				peaceTime = #{peacetime,jdbcType=VARCHAR},
+			</if>
+			<if test="endtime != null">
+				endTime = #{endtime,jdbcType=VARCHAR},
+			</if>
+			<if test="score != null">
+				score = #{score,jdbcType=VARCHAR},
+			</if>
+			<if test="absent != null">
+				absent = #{absent,jdbcType=VARCHAR},
+			</if>
+		</set>
+		where Student_id = #{studentId,jdbcType=VARCHAR}
+		and course_id = #{courseId,jdbcType=VARCHAR}
+	</update>
+	<update id="updateByPrimaryKey" parameterType="JW.pojo.TScore">
+		update t_score
+		set peaceTime = #{peacetime,jdbcType=VARCHAR},
+		endTime = #{endtime,jdbcType=VARCHAR},
+		score = #{score,jdbcType=VARCHAR},
+		absent = #{absent,jdbcType=VARCHAR}
+		where Student_id = #{studentId,jdbcType=VARCHAR}
+		and course_id = #{courseId,jdbcType=VARCHAR}
+	</update>
+</mapper>

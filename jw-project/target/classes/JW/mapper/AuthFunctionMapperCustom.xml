@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="JW.mapper.AuthFunctionMapperCustom">
+
+	<resultMap id="findTeacherMenu" type="JW.pojo.AuthFunction"
+		autoMapping="true">
+		<id column="id" property="id" jdbcType="VARCHAR" />
+		<result column="name" property="name" jdbcType="VARCHAR" />
+		<result column="code" property="code" jdbcType="VARCHAR" />
+		<result column="description" property="description" jdbcType="VARCHAR" />
+		<result column="page" property="page" jdbcType="VARCHAR" />
+		<result column="generatemenu" property="generatemenu" jdbcType="VARCHAR" />
+		<result column="zindex" property="zindex" jdbcType="INTEGER" />
+		<result column="pid" property="pid" jdbcType="VARCHAR" />
+		<collection property="roles" ofType="JW.pojo.AuthRole">
+			<id column="id" property="id" jdbcType="VARCHAR" />
+			<result column="name" property="name" jdbcType="VARCHAR" />
+			<result column="code" property="code" jdbcType="VARCHAR" />
+			<result column="description" property="description" jdbcType="VARCHAR" />
+			<association property="teacher" javaType="JW.pojo.TTeacher">
+				<id column="tid" property="tid" jdbcType="VARCHAR" />
+				<result column="password" property="password" jdbcType="VARCHAR" />
+				<result column="tname" property="tname" jdbcType="VARCHAR" />
+				<result column="tsex" property="tsex" jdbcType="VARCHAR" />
+				<result column="tage" property="tage" jdbcType="VARCHAR" />
+				<result column="status" property="status" jdbcType="CHAR" />
+				<result column="college_id" property="collegeId" jdbcType="VARCHAR" />
+				<result column="qx" property="qx" jdbcType="VARCHAR" />
+				<result column="beginTime" property="begintime" jdbcType="TIMESTAMP" />
+				<result column="salary" property="salary" jdbcType="DOUBLE" />
+			</association>
+		</collection>
+	</resultMap>
+
+	<select id="findAll" resultType="JW.pojo.AuthFunction">
+		select * from auth_function
+	</select>
+
+	<select id="findListByTeacherid" parameterType="java.lang.Integer"
+		resultType="JW.pojo.AuthFunction">
+		SELECT
+		f.`id`,f.NAME,f.CODE,f.description,f.page,f.generatemenu,f.zindex,f.pid
+		FROM
+		`auth_function` f LEFT OUTER JOIN
+		`role_function` r ON
+		r.`function_id`=f.`id`
+		LEFT OUTER JOIN `auth_role`
+		ar ON
+		r.`role_id`=ar.`id` LEFT OUTER JOIN
+		`teacher_role` ON ar.`id`=
+		teacher_role.`role_id`
+		LEFT OUTER JOIN `t_teacher` ON
+		teacher_role.`teacher_id`=t_teacher.`tid`
+		WHERE
+		t_teacher.`tid`=
+		#{value};
+	</select>
+
+	<select id="findListByStudentid" parameterType="java.lang.Integer"
+		resultType="JW.pojo.AuthFunction">
+		SELECT
+		f.`id`,f.NAME,f.CODE,f.description,f.page,f.generatemenu,f.zindex,f.pid
+		FROM
+		`auth_function` f LEFT OUTER JOIN
+		`role_function` r ON
+		r.`function_id`=f.`id`
+		LEFT OUTER JOIN `auth_role`
+		ar ON
+		r.`role_id`=ar.`id` LEFT OUTER JOIN
+		`student_role` ON ar.`id`=
+		student_role.`role_id`
+		LEFT OUTER JOIN `t_student` ON
+		student_role.`student_id`=t_student.`sid`
+		WHERE
+		t_student.`sid`=#{value};
+	</select>
+
+	<select id="findListByUserid" parameterType="java.lang.Integer">
+		SELECT DISTINCT
+		f.`id`,f.NAME,f.CODE,f.description,f.page,f.generatemenu,f.zindex,f.pid
+		FROM
+		Function f LEFT OUTER JOIN
+		f.roles r
+		LEFT OUTER JOIN r.user s WHERE
+		s.id
+		= #{value}
+	</select>
+
+	<select id="findAllMenu" resultType="JW.pojo.AuthFunction">
+		SELECT * FROM
+		`auth_function` f WHERE f.generatemenu
+		= '1'
+		ORDER BY
+		f.zindex DESC
+	</select>
+
+	<select id="findMenuByUserid" resultMap="findTeacherMenu">
+		SELECT
+		DISTINCT
+		f.`id`,f.NAME,f.CODE,f.description,f.page,f.generatemenu,f.zindex,f.pid
+		FROM
+		`auth_function` f LEFT OUTER JOIN
+		`role_function` r ON
+		r.`function_id`=f.`id`
+		LEFT OUTER JOIN `auth_role`
+		ar ON
+		r.`role_id`=ar.`id`
+		LEFT OUTER JOIN `user_role` ON ar.`id`=
+		`user_role`.`role_id`
+		LEFT OUTER JOIN `t_user` ON
+		`user_role`.`user_id`=`t_user`.`id`
+		WHERE
+		`t_user`.`id`=#{value} AND
+		f.`generatemenu` = '1' ORDER
+		BY f.`zindex`
+		DESC;
+	</select>
+
+	<select id="findMenuByTeacherid" resultMap="findTeacherMenu">
+		SELECT
+		f.`id`,f.NAME,f.CODE,f.description,f.page,f.generatemenu,f.zindex,f.pid
+		FROM
+		`auth_function` f LEFT OUTER JOIN
+		`role_function` r ON
+		r.`function_id`=f.`id`
+		LEFT OUTER JOIN `auth_role`
+		ar ON
+		r.`role_id`=ar.`id`
+		LEFT OUTER JOIN `teacher_role` ON ar.`id`=
+		teacher_role.`role_id`
+		LEFT OUTER JOIN `t_teacher` ON
+		teacher_role.`teacher_id`=t_teacher.`tid`
+		WHERE
+		t_teacher.`tid`=#{value} AND f.`generatemenu` = '1' ORDER
+		BY f.`zindex`
+		DESC;
+	</select>
+
+	<select id="findMenuByStudentid" parameterType="java.lang.Integer"
+		resultType="JW.pojo.AuthFunction">
+		SELECT
+		f.`id`,f.NAME,f.CODE,f.description,f.page,f.generatemenu,f.zindex,f.pid
+		FROM
+		`auth_function` f LEFT OUTER JOIN
+		`role_function` r ON
+		r.`function_id`=f.`id`
+		LEFT OUTER JOIN `auth_role`
+		ar ON
+		r.`role_id`=ar.`id`
+		LEFT OUTER JOIN `student_role` ON ar.`id`=
+		student_role.`role_id`
+		LEFT OUTER JOIN `t_student` ON
+		student_role.`student_id`=t_student.`sid`
+		WHERE
+		t_student.`sid`=#{value} AND f.`generatemenu` = '1' ORDER
+		BY f.`zindex`
+		DESC;
+	</select>
+</mapper>
