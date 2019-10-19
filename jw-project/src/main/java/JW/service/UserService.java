@@ -1,6 +1,5 @@
 package JW.service;
 
-import JW.pojo.TStudent;
 import JW.pojo.TUser;
 
 /**
@@ -9,7 +8,7 @@ import JW.pojo.TUser;
 public interface UserService {
     public TUser login(TUser user);
 
-    public void editPassword(String password, String id);
+    public TUser editPassword(String password, String id);
 
     public void save(TUser model, String[] roleIds);
     

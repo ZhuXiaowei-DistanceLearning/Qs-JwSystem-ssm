@@ -22,7 +22,21 @@ public class RoleAction {
 	@RequestMapping("/add")
 	public String add(String ids, AuthRole role) {
 		roleSerivce.save(role, ids);
-		return "/admin/role";
+		return "redirect:/page/admin/role.action";
+	}
+
+	@RequestMapping("/update")
+	@ResponseBody
+	public String update(String ids,String roleId){
+		roleSerivce.update(ids,roleId);
+		return "true";
+	}
+
+	@RequestMapping("/delete")
+	@ResponseBody
+	public String delete(String roleId){
+		roleSerivce.deleteRole(roleId);
+		return "true";
 	}
 
 	@RequestMapping("/pageQuery")

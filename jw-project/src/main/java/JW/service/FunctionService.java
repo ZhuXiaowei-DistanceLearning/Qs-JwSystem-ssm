@@ -10,15 +10,20 @@ import pojo.EasyUIDataGridResult;
  */
 public interface FunctionService {
 
-	public List<AuthFunction> findMenu();
+    public List<AuthFunction> findMenu();
 
-	public List<AuthFunction> findAll();
+    public List<AuthFunction> findAll();
 
-	public void save(AuthFunction model);
+    public void save(AuthFunction model);
 
-	public List<AuthFunction> findListByTeacherid(String tid);
+    public void update(String ids);
 
-	public List<AuthFunction> findListByStudentid(String sid);
+    public List<AuthFunction> findListByTeacherid(String tid);
 
-	public EasyUIDataGridResult pageQuery(Integer page, Integer rows);
+    public List<AuthFunction> findListByStudentid(String sid);
+
+    public EasyUIDataGridResult pageQuery(Integer page, Integer rows);
+
+    List<Integer> queryFunctionByRole(String id);
+
 }

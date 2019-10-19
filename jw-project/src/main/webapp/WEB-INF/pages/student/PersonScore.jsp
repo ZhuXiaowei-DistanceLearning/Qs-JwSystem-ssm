@@ -66,190 +66,271 @@ table.hovertable td {
 	border-color: #a9c6c9;
 }
 </style>
+<body style="margin-left: 400px">
+<h2>成绩查询</h2>
+
+<table id="dg" class="easyui-datagrid" title="成绩列表" style="width:950px;height:724px;"
+	   data-options="
+				iconCls: 'icon-edit',
+				singleSelect: true,
+				toolbar: '#tb',
+				striped:true,
+				loadMsg:'正在加载中',
+				pagination:true,
+				rownumbers:true,
+<%--				fitColumns:true,--%>
+				url: '${pageContext.request.contextPath }/score/findStudentScore.action',
+				method:'get'
+			">
+	<thead>
+	<tr>
+		<th data-options="field:'tmname',width:100,
+						formatter:function(value,row){
+							return row.course.team.name;
+						}">开课学期</th>
+		<th data-options="field:'courseId',width:150,align:'center'">课程编号</th>
+		<th data-options="field:'course',width:170,align:'center',formatter:function(value,row){
+							return row.course.name;
+						}">课程名称</th>
+		<th data-options="field:'score',width:50,align:'center'">成绩</th>
+		<th data-options="field:'credit',width:50,align:'center',formatter:function(value,row){
+							return row.course.credit;
+						}">学分</th>
+		<th data-options="field:'status',width:50,align:'center',formatter:function(value,row){
+							return row.productname;
+						}">绩点</th>
+		<th data-options="field:'category',width:80,align:'center',formatter:function(value,row){
+							return '考试';
+						}">考核方式</th>
+		<th data-options="field:'courseStatus',width:100,align:'center',formatter:function(value,row){
+							return '限选';
+						}">课程属性</th>
+		<th data-options="field:'courseQuantity',width:160,align:'center',formatter:function(value,row){
+							return row.course.nature.name;
+						}">课程性质</th>
+	</tr>
+	</thead>
+</table>
+
+<div id="tb" style="height:auto">
+	<a href="javascript:void(0)" class="easyui-linkbutton" data-options="iconCls:'icon-add',plain:true" onclick="append()">Append</a>
+</div>
 
 <script type="text/javascript">
-	//工具栏
-	var frozenColumns;
-
-	var columns = [ [
-			{
-				field : 'id',
-				hidden : true,//该列隐藏
-				formatter : function(value, row, index) {
-					//gysypmls对应action接收对象中list的名称，[]括号中是从0开始序号,id是list中对象属性
-					return '<input type="hidden" name="gysypmlControls['+index+'].ypxxid" value="'+value+'" />';
-				}
-			}, {
-				field : 'year',
-				title : '学年',
-				width : 230
-			}, {
-				field : 'time',
-				title : '学期',
-				width : 100
-			}, {
-				field : 'courseId',
-				title : '课程代码',
-				width : 130
-			}, {
-				field : 'className',
-				title : '课程名称',
-				width : 230,
-				formatter : function(data, row, index) {
-					return row.course.name;
-				}
-			}, {
-				field : 'natureName',
-				title : '课程性质',
-				formatter : function(data, row, index) {
-					return row.course.nature.name;
-				}
-			}, {
-				field : 'course.credit',
-				title : '学分',
-				width : 80,
-				formatter : function(data, row, index) {
-					return row.course.credit;
-				}
-			}, {
-				field : 'classroom',
-				title : '绩点',
-				width : 80,
-				formatter : function(data, row, index) {
-				}
-			}, {
-				field : 'score',
-				title : '成绩',
-				width : 80
-			}, {
-				field : 'secondScore',
-				title : '补考成绩',
-				width : 130
-			}, {
-				field : 'reScore',
-				title : '重修成绩',
-				width : 130
-			}, {
-				field : 'collegeName',
-				title : '开课学院',
-				width : 230,
-				formatter : function(data, row, index) {
-					return row.students.classes.tSpecialty.college.name;
-				}
-			} ] ];
-
-	//datagrid加载
-	function initGrid() {
-		$('#gysypmllist')
-				.datagrid(
-						{
-							striped : true,
-							url : '${pageContext.request.contextPath }/score/findStudentScore.action',
-							idField : 'courseid',//json数据集的主键
-							columns : columns,
-							pagination : true,
-							rownumbers : true,
-							height : 480,
-							pageList : [ 15, 30, 50, 100 ],//设置每页显示个数
-						});
+	var editIndex = undefined;
+	function endEditing(){
+		if (editIndex == undefined){return true}
+		if ($('#dg').datagrid('validateRow', editIndex)){
+			var ed = $('#dg').datagrid('getEditor', {index:editIndex,field:'productid'});
+			var productname = $(ed.target).combobox('getText');
+			$('#dg').datagrid('getRows')[editIndex]['productname'] = productname;
+			$('#dg').datagrid('endEdit', editIndex);
+			editIndex = undefined;
+			return true;
+		} else {
+			return false;
+		}
 	}
-	$(function() {
-		initGrid();
-
-		/* //加载药品类型
-		getDictinfoIdlist('001','ypxxCustom_lb','00101');
-
-		//加载交易状态
-		getDictinfoCodelist('003','ypxxCustom.jyzt'); */
-	});
-
-	//列表查询
-	function gysypmlquery() {
-		//将form中的数据组成json
-		var formdata = $("#gysypmldeleteForm").serializeJson();
-		//alert(formdata);
-		//取消所有datagrid中的选择
-		//$('#gysypmllist').datagrid('unselectAll');
-		//json是datagrid需要格式数据，向服务器发送的是key/value
-		$('#gysypmllist').datagrid('load', formdata);
+	function onClickRow(index){
+		if (editIndex != index){
+			if (endEditing()){
+				$('#dg').datagrid('selectRow', index)
+						.datagrid('beginEdit', index);
+				editIndex = index;
+			} else {
+				$('#dg').datagrid('selectRow', editIndex);
+			}
+		}
+	}
+	function getChanges(){
+		var rows = $('#dg').datagrid('getChanges');
+		alert(rows.length+' rows are changed!');
 	}
 </script>
-</HEAD>
-<BODY>
-	<div id="ypxxquery_div">
-		<form id="sysuserqueryForm">
-			<!-- 查询条件 -->
-			<TABLE class="hovertable">
-				<TBODY>
-					<TR>
-						<TD>学年：</td>
-						<td><select name="sysuserCustom.groupid">
-								<option value=""></option>
-								<option value="1">2015-2016</option>
-								<option value="2">2016-2017</option>
-								<option value="3">2017-2018</option>
-						</select></TD>
-						<TD>学期：</TD>
-						<td><select name="sysuserCustom.groupid">
-								<option value=""></option>
-								<option value="1">1</option>
-								<option value="2">2</option>
-								<option value="3">3</option>
-						</select></TD>
+</body>
+<%--<script type="text/javascript">--%>
+<%--	//工具栏--%>
+<%--	var frozenColumns;--%>
 
-						<TD>课程性质：</TD>
-						<td><select name="sysuserCustom.groupid">
-								<option value=""></option>
-								<option value="1">公共选修课</option>
-								<option value="2">全校性选修课</option>
-								<option value="3">公共任选课</option>
-								<option value="4">公共必修课</option>
-								<option value="0">专业必修课</option>
-						</select></TD>
-						<td><a id="btn" href="#" onclick="queryuser()"
-							class="easyui-linkbutton" iconCls='icon-search'>查询</a></td>
-					</TR>
+<%--	var columns = [ [--%>
+<%--			{--%>
+<%--				field : 'id',--%>
+<%--				hidden : true,//该列隐藏--%>
+<%--				formatter : function(value, row, index) {--%>
+<%--					//gysypmls对应action接收对象中list的名称，[]括号中是从0开始序号,id是list中对象属性--%>
+<%--					return '<input type="hidden" name="gysypmlControls['+index+'].ypxxid" value="'+value+'" />';--%>
+<%--				}--%>
+<%--			}, {--%>
+<%--				field : 'year',--%>
+<%--				title : '学年',--%>
+<%--				width : 230--%>
+<%--			}, {--%>
+<%--				field : 'time',--%>
+<%--				title : '学期',--%>
+<%--				width : 100--%>
+<%--			}, {--%>
+<%--				field : 'courseId',--%>
+<%--				title : '课程代码',--%>
+<%--				width : 130--%>
+<%--			}, {--%>
+<%--				field : 'className',--%>
+<%--				title : '课程名称',--%>
+<%--				width : 230,--%>
+<%--				formatter : function(data, row, index) {--%>
+<%--					return row.course.name;--%>
+<%--				}--%>
+<%--			}, {--%>
+<%--				field : 'natureName',--%>
+<%--				title : '课程性质',--%>
+<%--				formatter : function(data, row, index) {--%>
+<%--					return row.course.nature.name;--%>
+<%--				}--%>
+<%--			}, {--%>
+<%--				field : 'course.credit',--%>
+<%--				title : '学分',--%>
+<%--				width : 80,--%>
+<%--				formatter : function(data, row, index) {--%>
+<%--					return row.course.credit;--%>
+<%--				}--%>
+<%--			}, {--%>
+<%--				field : 'classroom',--%>
+<%--				title : '绩点',--%>
+<%--				width : 80,--%>
+<%--				formatter : function(data, row, index) {--%>
+<%--				}--%>
+<%--			}, {--%>
+<%--				field : 'score',--%>
+<%--				title : '成绩',--%>
+<%--				width : 80--%>
+<%--			}, {--%>
+<%--				field : 'secondScore',--%>
+<%--				title : '补考成绩',--%>
+<%--				width : 130--%>
+<%--			}, {--%>
+<%--				field : 'reScore',--%>
+<%--				title : '重修成绩',--%>
+<%--				width : 130--%>
+<%--			}, {--%>
+<%--				field : 'collegeName',--%>
+<%--				title : '开课学院',--%>
+<%--				width : 230,--%>
+<%--				formatter : function(data, row, index) {--%>
+<%--					return row.students.classes.tSpecialty.college.name;--%>
+<%--				}--%>
+<%--			} ] ];--%>
+
+<%--	//datagrid加载--%>
+<%--	function initGrid() {--%>
+<%--		$('#gysypmllist')--%>
+<%--				.datagrid(--%>
+<%--						{--%>
+<%--							striped : true,--%>
+<%--							url : '${pageContext.request.contextPath }/score/findStudentScore.action',--%>
+<%--							idField : 'courseid',//json数据集的主键--%>
+<%--							columns : columns,--%>
+<%--							pagination : true,--%>
+<%--							rownumbers : true,--%>
+<%--							height : 480,--%>
+<%--							pageList : [ 15, 30, 50, 100 ],//设置每页显示个数--%>
+<%--						});--%>
+<%--	}--%>
+<%--	$(function() {--%>
+<%--		initGrid();--%>
+
+<%--		/* //加载药品类型--%>
+<%--		getDictinfoIdlist('001','ypxxCustom_lb','00101');--%>
+
+<%--		//加载交易状态--%>
+<%--		getDictinfoCodelist('003','ypxxCustom.jyzt'); */--%>
+<%--	});--%>
+
+<%--	//列表查询--%>
+<%--	function gysypmlquery() {--%>
+<%--		//将form中的数据组成json--%>
+<%--		var formdata = $("#gysypmldeleteForm").serializeJson();--%>
+<%--		//alert(formdata);--%>
+<%--		//取消所有datagrid中的选择--%>
+<%--		//$('#gysypmllist').datagrid('unselectAll');--%>
+<%--		//json是datagrid需要格式数据，向服务器发送的是key/value--%>
+<%--		$('#gysypmllist').datagrid('load', formdata);--%>
+<%--	}--%>
+<%--</script>--%>
+<%--</HEAD>--%>
+<%--<BODY>--%>
+<%--	<div id="ypxxquery_div">--%>
+<%--		<form id="sysuserqueryForm">--%>
+<%--			<!-- 查询条件 -->--%>
+<%--			<TABLE class="hovertable">--%>
+<%--				<TBODY>--%>
+<%--					<TR>--%>
+<%--						<TD>学年：</td>--%>
+<%--						<td><select name="sysuserCustom.groupid">--%>
+<%--								<option value=""></option>--%>
+<%--								<option value="1">2015-2016</option>--%>
+<%--								<option value="2">2016-2017</option>--%>
+<%--								<option value="3">2017-2018</option>--%>
+<%--						</select></TD>--%>
+<%--						<TD>学期：</TD>--%>
+<%--						<td><select name="sysuserCustom.groupid">--%>
+<%--								<option value=""></option>--%>
+<%--								<option value="1">1</option>--%>
+<%--								<option value="2">2</option>--%>
+<%--								<option value="3">3</option>--%>
+<%--						</select></TD>--%>
+
+<%--						<TD>课程性质：</TD>--%>
+<%--						<td><select name="sysuserCustom.groupid">--%>
+<%--								<option value=""></option>--%>
+<%--								<option value="1">公共选修课</option>--%>
+<%--								<option value="2">全校性选修课</option>--%>
+<%--								<option value="3">公共任选课</option>--%>
+<%--								<option value="4">公共必修课</option>--%>
+<%--								<option value="0">专业必修课</option>--%>
+<%--						</select></TD>--%>
+<%--						<td><a id="btn" href="#" onclick="queryuser()"--%>
+<%--							class="easyui-linkbutton" iconCls='icon-search'>查询</a></td>--%>
+<%--					</TR>--%>
 
 
-				</TBODY>
-			</TABLE>
-			<!-- Table goes in the document BODY -->
-			<table class="hovertable" width="100%">
-				<tr onmouseover="this.style.backgroundColor='#ffff66';"
-					onmouseout="this.style.backgroundColor='#d4e3e5';">
-					<td colspan="3" align="center" rowspan="2">长沙民政职业技术学院在校成绩</td>
-				</tr>
-				<tr></tr>
-					<tr onmouseover="this.style.backgroundColor='#ffff66';"
-						onmouseout="this.style.backgroundColor='#d4e3e5';">
-						<td>学号:${PersonStudent.sid }</td>
-						<td>姓名:${PersonStudent.sname }
-						</td>
-						<td>学院:
-							<p id="scollege"></p>
-						</td>
-					</tr>
-					<tr onmouseover="this.style.backgroundColor='#ffff66';"
-						onmouseout="this.style.backgroundColor='#d4e3e5';">
-						<td colspan="2">专业:
-							<p id="sspeciatly"></p>
-						</td>
-						<td>行政班:
-							<p id="sclassname"></p>
-						</td>
-					</tr>
-			</table>
-			<TABLE border=0 cellSpacing=0 cellPadding=0 width="100%" align=center>
-				<TBODY>
-					<TR>
-						<TD>
-							<table id="gysypmllist"></table>
-						</TD>
-					</TR>
-				</TBODY>
-			</TABLE>
-		</form>
-	</div>
-</BODY>
+<%--				</TBODY>--%>
+<%--			</TABLE>--%>
+<%--			<!-- Table goes in the document BODY -->--%>
+<%--			<table class="hovertable" width="100%">--%>
+<%--				<tr onmouseover="this.style.backgroundColor='#ffff66';"--%>
+<%--					onmouseout="this.style.backgroundColor='#d4e3e5';">--%>
+<%--					<td colspan="3" align="center" rowspan="2">长沙民政职业技术学院在校成绩</td>--%>
+<%--				</tr>--%>
+<%--				<tr></tr>--%>
+<%--					<tr onmouseover="this.style.backgroundColor='#ffff66';"--%>
+<%--						onmouseout="this.style.backgroundColor='#d4e3e5';">--%>
+<%--						<td>学号:${PersonStudent.sid }</td>--%>
+<%--						<td>姓名:${PersonStudent.sname }--%>
+<%--						</td>--%>
+<%--						<td>学院:--%>
+<%--							<p id="scollege"></p>--%>
+<%--						</td>--%>
+<%--					</tr>--%>
+<%--					<tr onmouseover="this.style.backgroundColor='#ffff66';"--%>
+<%--						onmouseout="this.style.backgroundColor='#d4e3e5';">--%>
+<%--						<td colspan="2">专业:--%>
+<%--							<p id="sspeciatly"></p>--%>
+<%--						</td>--%>
+<%--						<td>行政班:--%>
+<%--							<p id="sclassname"></p>--%>
+<%--						</td>--%>
+<%--					</tr>--%>
+<%--			</table>--%>
+<%--			<TABLE border=0 cellSpacing=0 cellPadding=0 width="100%" align=center>--%>
+<%--				<TBODY>--%>
+<%--					<TR>--%>
+<%--						<TD>--%>
+<%--							<table id="gysypmllist"></table>--%>
+<%--						</TD>--%>
+<%--					</TR>--%>
+<%--				</TBODY>--%>
+<%--			</TABLE>--%>
+<%--		</form>--%>
+<%--	</div>--%>
+<%--</BODY>--%>
 </HTML>
 

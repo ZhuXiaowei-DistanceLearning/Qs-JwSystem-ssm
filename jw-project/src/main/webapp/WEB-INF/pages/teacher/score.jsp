@@ -70,7 +70,7 @@
 			return row.students.classes.tSpecialty.name;
 		}
 	}, {
-		field : 'class',
+		field : 'classname',
 		title : '所属班级',
 		width : 120,
 		align : 'center',
@@ -94,12 +94,12 @@
 			return row.students.absent;
 		}
 	}, {
-		field : 'peaceTime',
+		field : 'peacetime',
 		title : '平时成绩',
 		width : 120,
 		align : 'center'
 	}, {
-		field : 'endTime',
+		field : 'endtime',
 		title : '期末成绩',
 		width : 120,
 		align : 'center'
@@ -137,7 +137,7 @@
 
 		// 添加取派员窗口
 		$('#addStaffWindow').window({
-			title : '添加专业',
+			title : '添加成绩',
 			width : 400,
 			modal : true,
 			shadow : true,
@@ -147,7 +147,7 @@
 		});
 
 		$('#editStaffWindow').window({
-			title : '修改专业',
+			title : '修改成绩',
 			width : 400,
 			modal : true,
 			shadow : true,
@@ -187,7 +187,7 @@
 
 		<div region="center" style="overflow: auto; padding: 5px;"
 			border="false">
-			<form id="addScoreForm" action="/score/addStudentScore.action" method="post">
+			<form id="addScoreForm" action="${pageContext.request.contextPath }/score/addStudentScore.action" method="post">
 				<table class="table-edit" width="80%" align="center">
 					<tr class="title">
 						<td colspan="2">添加成绩</td>

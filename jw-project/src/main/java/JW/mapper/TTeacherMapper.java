@@ -29,4 +29,6 @@ public interface TTeacherMapper {
 	int updateByPrimaryKey(TTeacher record);
 
 	List<TTeacher> findAll();
+
+    List<TTeacher> findListNoStatusAndCollege(String id);
 }

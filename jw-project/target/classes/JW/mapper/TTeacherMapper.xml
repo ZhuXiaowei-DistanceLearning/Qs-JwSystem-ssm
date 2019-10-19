@@ -1,343 +1,347 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="JW.mapper.TTeacherMapper">
-	<resultMap id="BaseResultMap" type="JW.pojo.TTeacher">
-		<id column="tid" property="tid" jdbcType="VARCHAR" />
-		<result column="password" property="password" jdbcType="VARCHAR" />
-		<result column="tname" property="tname" jdbcType="VARCHAR" />
-		<result column="tsex" property="tsex" jdbcType="VARCHAR" />
-		<result column="tage" property="tage" jdbcType="VARCHAR" />
-		<result column="status" property="status" jdbcType="CHAR" />
-		<result column="college_id" property="collegeId" jdbcType="VARCHAR" />
-		<result column="qx" property="qx" jdbcType="VARCHAR" />
-		<result column="beginTime" property="begintime" jdbcType="TIMESTAMP" />
-		<result column="salary" property="salary" jdbcType="DOUBLE" />
-	</resultMap>
-	<resultMap id="ManyResultMap" type="JW.pojo.TTeacher">
-		<id column="tid" property="tid" jdbcType="VARCHAR" />
-		<result column="password" property="password" jdbcType="VARCHAR" />
-		<result column="tname" property="tname" jdbcType="VARCHAR" />
-		<result column="tsex" property="tsex" jdbcType="VARCHAR" />
-		<result column="tage" property="tage" jdbcType="VARCHAR" />
-		<result column="status" property="status" jdbcType="CHAR" />
-		<result column="college_id" property="collegeId" jdbcType="VARCHAR" />
-		<result column="qx" property="qx" jdbcType="VARCHAR" />
-		<result column="beginTime" property="begintime" jdbcType="TIMESTAMP" />
-		<result column="salary" property="salary" jdbcType="DOUBLE" />
-		<association property="college" javaType="JW.pojo.TCollege">
-			<id column="id" property="id" jdbcType="VARCHAR" />
-			<result column="name" property="name" jdbcType="VARCHAR" />
-			<result column="status" property="status" jdbcType="CHAR" />
-		</association>
-	</resultMap>
-	<sql id="Example_Where_Clause">
-		<where>
-			<foreach collection="oredCriteria" item="criteria" separator="or">
-				<if test="criteria.valid">
-					<trim prefix="(" suffix=")" prefixOverrides="and">
-						<foreach collection="criteria.criteria" item="criterion">
-							<choose>
-								<when test="criterion.noValue">
-									and ${criterion.condition}
-								</when>
-								<when test="criterion.singleValue">
-									and ${criterion.condition} #{criterion.value}
-								</when>
-								<when test="criterion.betweenValue">
-									and ${criterion.condition} #{criterion.value}
-									and
-									#{criterion.secondValue}
-								</when>
-								<when test="criterion.listValue">
-									and ${criterion.condition}
-									<foreach collection="criterion.value" item="listItem"
-										open="(" close=")" separator=",">
-										#{listItem}
-									</foreach>
-								</when>
-							</choose>
-						</foreach>
-					</trim>
-				</if>
-			</foreach>
-		</where>
-	</sql>
-	<sql id="Update_By_Example_Where_Clause">
-		<where>
-			<foreach collection="example.oredCriteria" item="criteria"
-				separator="or">
-				<if test="criteria.valid">
-					<trim prefix="(" suffix=")" prefixOverrides="and">
-						<foreach collection="criteria.criteria" item="criterion">
-							<choose>
-								<when test="criterion.noValue">
-									and ${criterion.condition}
-								</when>
-								<when test="criterion.singleValue">
-									and ${criterion.condition} #{criterion.value}
-								</when>
-								<when test="criterion.betweenValue">
-									and ${criterion.condition} #{criterion.value}
-									and
-									#{criterion.secondValue}
-								</when>
-								<when test="criterion.listValue">
-									and ${criterion.condition}
-									<foreach collection="criterion.value" item="listItem"
-										open="(" close=")" separator=",">
-										#{listItem}
-									</foreach>
-								</when>
-							</choose>
-						</foreach>
-					</trim>
-				</if>
-			</foreach>
-		</where>
-	</sql>
-	<sql id="Base_Column_List">
-		tid, password, tname, tsex, tage, status, college_id, qx,
+    <resultMap id="BaseResultMap" type="JW.pojo.TTeacher">
+        <id column="tid" property="tid" jdbcType="VARCHAR"/>
+        <result column="password" property="password" jdbcType="VARCHAR"/>
+        <result column="tname" property="tname" jdbcType="VARCHAR"/>
+        <result column="tsex" property="tsex" jdbcType="VARCHAR"/>
+        <result column="tage" property="tage" jdbcType="VARCHAR"/>
+        <result column="status" property="status" jdbcType="CHAR"/>
+        <result column="college_id" property="collegeId" jdbcType="VARCHAR"/>
+        <result column="qx" property="qx" jdbcType="VARCHAR"/>
+        <result column="beginTime" property="begintime" jdbcType="TIMESTAMP"/>
+        <result column="salary" property="salary" jdbcType="DOUBLE"/>
+    </resultMap>
+    <resultMap id="ManyResultMap" type="JW.pojo.TTeacher">
+        <id column="tid" property="tid" jdbcType="VARCHAR"/>
+        <result column="password" property="password" jdbcType="VARCHAR"/>
+        <result column="tname" property="tname" jdbcType="VARCHAR"/>
+        <result column="tsex" property="tsex" jdbcType="VARCHAR"/>
+        <result column="tage" property="tage" jdbcType="VARCHAR"/>
+        <result column="status" property="status" jdbcType="CHAR"/>
+        <result column="college_id" property="collegeId" jdbcType="VARCHAR"/>
+        <result column="qx" property="qx" jdbcType="VARCHAR"/>
+        <result column="beginTime" property="begintime" jdbcType="TIMESTAMP"/>
+        <result column="salary" property="salary" jdbcType="DOUBLE"/>
+        <association property="college" javaType="JW.pojo.TCollege">
+            <id column="id" property="id" jdbcType="VARCHAR"/>
+            <result column="name" property="name" jdbcType="VARCHAR"/>
+            <result column="status" property="status" jdbcType="CHAR"/>
+        </association>
+    </resultMap>
+    <sql id="Example_Where_Clause">
+        <where>
+            <foreach collection="oredCriteria" item="criteria" separator="or">
+                <if test="criteria.valid">
+                    <trim prefix="(" suffix=")" prefixOverrides="and">
+                        <foreach collection="criteria.criteria" item="criterion">
+                            <choose>
+                                <when test="criterion.noValue">
+                                    and ${criterion.condition}
+                                </when>
+                                <when test="criterion.singleValue">
+                                    and ${criterion.condition} #{criterion.value}
+                                </when>
+                                <when test="criterion.betweenValue">
+                                    and ${criterion.condition} #{criterion.value}
+                                    and
+                                    #{criterion.secondValue}
+                                </when>
+                                <when test="criterion.listValue">
+                                    and ${criterion.condition}
+                                    <foreach collection="criterion.value" item="listItem"
+                                             open="(" close=")" separator=",">
+                                        #{listItem}
+                                    </foreach>
+                                </when>
+                            </choose>
+                        </foreach>
+                    </trim>
+                </if>
+            </foreach>
+        </where>
+    </sql>
+    <sql id="Update_By_Example_Where_Clause">
+        <where>
+            <foreach collection="example.oredCriteria" item="criteria"
+                     separator="or">
+                <if test="criteria.valid">
+                    <trim prefix="(" suffix=")" prefixOverrides="and">
+                        <foreach collection="criteria.criteria" item="criterion">
+                            <choose>
+                                <when test="criterion.noValue">
+                                    and ${criterion.condition}
+                                </when>
+                                <when test="criterion.singleValue">
+                                    and ${criterion.condition} #{criterion.value}
+                                </when>
+                                <when test="criterion.betweenValue">
+                                    and ${criterion.condition} #{criterion.value}
+                                    and
+                                    #{criterion.secondValue}
+                                </when>
+                                <when test="criterion.listValue">
+                                    and ${criterion.condition}
+                                    <foreach collection="criterion.value" item="listItem"
+                                             open="(" close=")" separator=",">
+                                        #{listItem}
+                                    </foreach>
+                                </when>
+                            </choose>
+                        </foreach>
+                    </trim>
+                </if>
+            </foreach>
+        </where>
+    </sql>
+    <sql id="Base_Column_List">
+        tid, password, tname, tsex, tage, status, college_id, qx,
 		beginTime,
 		salary
-	</sql>
-	<select id="selectByExample" resultMap="BaseResultMap"
-		parameterType="JW.pojo.TTeacherExample">
-		select
-		<if test="distinct">
-			distinct
-		</if>
-		<include refid="Base_Column_List" />
-		from t_teacher
-		<if test="_parameter != null">
-			<include refid="Example_Where_Clause" />
-		</if>
-		<if test="orderByClause != null">
-			order by ${orderByClause}
-		</if>
-	</select>
-	<!-- 一对多查询 -->
-	<select id="findAll" resultMap="ManyResultMap">
-		SELECT * FROM `t_teacher` t LEFT
-		JOIN `t_college` c ON t.`college_id`=c.`id`
-	</select>
-	<select id="selectByPrimaryKey" resultMap="BaseResultMap"
-		parameterType="java.lang.String">
-		select
-		<include refid="Base_Column_List" />
-		from t_teacher
-		where tid = #{tid,jdbcType=VARCHAR}
-	</select>
-	<delete id="deleteByPrimaryKey" parameterType="java.lang.String">
-		delete from
-		t_teacher
-		where tid = #{tid,jdbcType=VARCHAR}
-	</delete>
-	<delete id="deleteByExample" parameterType="JW.pojo.TTeacherExample">
-		delete from t_teacher
-		<if test="_parameter != null">
-			<include refid="Example_Where_Clause" />
-		</if>
-	</delete>
-	<insert id="insert" parameterType="JW.pojo.TTeacher">
-		insert into t_teacher (tid,
-		password, tname,
-		tsex, tage, status, college_id,
-		qx, beginTime, salary
-		)
-		values (#{tid,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR},
-		#{tname,jdbcType=VARCHAR},
-		#{tsex,jdbcType=VARCHAR},
-		#{tage,jdbcType=VARCHAR}, #{status,jdbcType=CHAR},
-		#{collegeId,jdbcType=VARCHAR},
-		#{qx,jdbcType=VARCHAR},
-		#{begintime,jdbcType=TIMESTAMP}, #{salary,jdbcType=DOUBLE}
-		)
-	</insert>
-	<insert id="insertSelective" parameterType="JW.pojo.TTeacher">
-		insert into t_teacher
-		<trim prefix="(" suffix=")" suffixOverrides=",">
-			<if test="tid != null">
-				tid,
-			</if>
-			<if test="password != null">
-				password,
-			</if>
-			<if test="tname != null">
-				tname,
-			</if>
-			<if test="tsex != null">
-				tsex,
-			</if>
-			<if test="tage != null">
-				tage,
-			</if>
-			<if test="status != null">
-				status,
-			</if>
-			<if test="collegeId != null">
-				college_id,
-			</if>
-			<if test="qx != null">
-				qx,
-			</if>
-			<if test="begintime != null">
-				beginTime,
-			</if>
-			<if test="salary != null">
-				salary,
-			</if>
-		</trim>
-		<trim prefix="values (" suffix=")" suffixOverrides=",">
-			<if test="tid != null">
-				#{tid,jdbcType=VARCHAR},
-			</if>
-			<if test="password != null">
-				#{password,jdbcType=VARCHAR},
-			</if>
-			<if test="tname != null">
-				#{tname,jdbcType=VARCHAR},
-			</if>
-			<if test="tsex != null">
-				#{tsex,jdbcType=VARCHAR},
-			</if>
-			<if test="tage != null">
-				#{tage,jdbcType=VARCHAR},
-			</if>
-			<if test="status != null">
-				#{status,jdbcType=CHAR},
-			</if>
-			<if test="collegeId != null">
-				#{collegeId,jdbcType=VARCHAR},
-			</if>
-			<if test="qx != null">
-				#{qx,jdbcType=VARCHAR},
-			</if>
-			<if test="begintime != null">
-				#{begintime,jdbcType=TIMESTAMP},
-			</if>
-			<if test="salary != null">
-				#{salary,jdbcType=DOUBLE},
-			</if>
-		</trim>
-	</insert>
-	<select id="countByExample" parameterType="JW.pojo.TTeacherExample"
-		resultType="java.lang.Integer">
-		select count(*) from t_teacher
-		<if test="_parameter != null">
-			<include refid="Example_Where_Clause" />
-		</if>
-	</select>
-	<update id="updateByExampleSelective" parameterType="map">
-		update t_teacher
-		<set>
-			<if test="record.tid != null">
-				tid = #{record.tid,jdbcType=VARCHAR},
-			</if>
-			<if test="record.password != null">
-				password = #{record.password,jdbcType=VARCHAR},
-			</if>
-			<if test="record.tname != null">
-				tname = #{record.tname,jdbcType=VARCHAR},
-			</if>
-			<if test="record.tsex != null">
-				tsex = #{record.tsex,jdbcType=VARCHAR},
-			</if>
-			<if test="record.tage != null">
-				tage = #{record.tage,jdbcType=VARCHAR},
-			</if>
-			<if test="record.status != null">
-				status = #{record.status,jdbcType=CHAR},
-			</if>
-			<if test="record.collegeId != null">
-				college_id = #{record.collegeId,jdbcType=VARCHAR},
-			</if>
-			<if test="record.qx != null">
-				qx = #{record.qx,jdbcType=VARCHAR},
-			</if>
-			<if test="record.begintime != null">
-				beginTime = #{record.begintime,jdbcType=TIMESTAMP},
-			</if>
-			<if test="record.salary != null">
-				salary = #{record.salary,jdbcType=DOUBLE},
-			</if>
-		</set>
-		<if test="_parameter != null">
-			<include refid="Update_By_Example_Where_Clause" />
-		</if>
-	</update>
-	<update id="updateByExample" parameterType="map">
-		update t_teacher
-		set tid = #{record.tid,jdbcType=VARCHAR},
-		password =
-		#{record.password,jdbcType=VARCHAR},
-		tname =
-		#{record.tname,jdbcType=VARCHAR},
-		tsex =
-		#{record.tsex,jdbcType=VARCHAR},
-		tage =
-		#{record.tage,jdbcType=VARCHAR},
-		status =
-		#{record.status,jdbcType=CHAR},
-		college_id =
-		#{record.collegeId,jdbcType=VARCHAR},
-		qx =
-		#{record.qx,jdbcType=VARCHAR},
-		beginTime =
-		#{record.begintime,jdbcType=TIMESTAMP},
-		salary =
-		#{record.salary,jdbcType=DOUBLE}
-		<if test="_parameter != null">
-			<include refid="Update_By_Example_Where_Clause" />
-		</if>
-	</update>
-	<update id="updateByPrimaryKeySelective" parameterType="JW.pojo.TTeacher">
-		update t_teacher
-		<set>
-			<if test="password != null">
-				password = #{password,jdbcType=VARCHAR},
-			</if>
-			<if test="tname != null">
-				tname = #{tname,jdbcType=VARCHAR},
-			</if>
-			<if test="tsex != null">
-				tsex = #{tsex,jdbcType=VARCHAR},
-			</if>
-			<if test="tage != null">
-				tage = #{tage,jdbcType=VARCHAR},
-			</if>
-			<if test="status != null">
-				status = #{status,jdbcType=CHAR},
-			</if>
-			<if test="collegeId != null">
-				college_id = #{collegeId,jdbcType=VARCHAR},
-			</if>
-			<if test="qx != null">
-				qx = #{qx,jdbcType=VARCHAR},
-			</if>
-			<if test="begintime != null">
-				beginTime = #{begintime,jdbcType=TIMESTAMP},
-			</if>
-			<if test="salary != null">
-				salary = #{salary,jdbcType=DOUBLE},
-			</if>
-		</set>
-		where tid = #{tid,jdbcType=VARCHAR}
-	</update>
-	<update id="updateByPrimaryKey" parameterType="JW.pojo.TTeacher">
-		update t_teacher
-		set password = #{password,jdbcType=VARCHAR},
-		tname =
-		#{tname,jdbcType=VARCHAR},
-		tsex = #{tsex,jdbcType=VARCHAR},
-		tage =
-		#{tage,jdbcType=VARCHAR},
-		status = #{status,jdbcType=CHAR},
-		college_id =
-		#{collegeId,jdbcType=VARCHAR},
-		qx = #{qx,jdbcType=VARCHAR},
-		beginTime =
-		#{begintime,jdbcType=TIMESTAMP},
-		salary = #{salary,jdbcType=DOUBLE}
-		where tid = #{tid,jdbcType=VARCHAR}
-	</update>
+    </sql>
+    <select id="selectByExample" resultMap="BaseResultMap"
+            parameterType="JW.pojo.TTeacherExample">
+        select
+        <if test="distinct">
+            distinct
+        </if>
+        <include refid="Base_Column_List"/>
+        from t_teacher
+        <if test="_parameter != null">
+            <include refid="Example_Where_Clause"/>
+        </if>
+        <if test="orderByClause != null">
+            order by ${orderByClause}
+        </if>
+    </select>
+    <!-- 一对多查询 -->
+    <select id="findAll" resultMap="ManyResultMap">
+        SELECT *
+        FROM `t_teacher` t
+                 LEFT JOIN `t_college` c ON t.`college_id` = c.`id`
+    </select>
+    <select id="findListNoStatusAndCollege" resultMap="BaseResultMap" parameterType="string">
+        SELECT *
+        FROM `t_teacher`
+        WHERE college_id = #{value}
+    </select>
+    <select id="selectByPrimaryKey" resultMap="BaseResultMap"
+            parameterType="java.lang.String">
+        select
+        <include refid="Base_Column_List"/>
+        from t_teacher
+        where tid = #{tid,jdbcType=VARCHAR}
+    </select>
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
+        delete
+        from t_teacher
+        where tid = #{tid,jdbcType=VARCHAR}
+    </delete>
+    <delete id="deleteByExample" parameterType="JW.pojo.TTeacherExample">
+        delete from t_teacher
+        <if test="_parameter != null">
+            <include refid="Example_Where_Clause"/>
+        </if>
+    </delete>
+    <insert id="insert" parameterType="JW.pojo.TTeacher">
+        insert into t_teacher (tid,
+                               password, tname,
+                               tsex, tage, status, college_id,
+                               qx, beginTime, salary)
+        values (#{tid,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR},
+                #{tname,jdbcType=VARCHAR},
+                #{tsex,jdbcType=VARCHAR},
+                #{tage,jdbcType=VARCHAR}, #{status,jdbcType=CHAR},
+                #{collegeId,jdbcType=VARCHAR},
+                #{qx,jdbcType=VARCHAR},
+                #{begintime,jdbcType=TIMESTAMP}, #{salary,jdbcType=DOUBLE})
+    </insert>
+    <insert id="insertSelective" parameterType="JW.pojo.TTeacher">
+        insert into t_teacher
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="tid != null">
+                tid,
+            </if>
+            <if test="password != null">
+                password,
+            </if>
+            <if test="tname != null">
+                tname,
+            </if>
+            <if test="tsex != null">
+                tsex,
+            </if>
+            <if test="tage != null">
+                tage,
+            </if>
+            <if test="status != null">
+                status,
+            </if>
+            <if test="collegeId != null">
+                college_id,
+            </if>
+            <if test="qx != null">
+                qx,
+            </if>
+            <if test="begintime != null">
+                beginTime,
+            </if>
+            <if test="salary != null">
+                salary,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="tid != null">
+                #{tid,jdbcType=VARCHAR},
+            </if>
+            <if test="password != null">
+                #{password,jdbcType=VARCHAR},
+            </if>
+            <if test="tname != null">
+                #{tname,jdbcType=VARCHAR},
+            </if>
+            <if test="tsex != null">
+                #{tsex,jdbcType=VARCHAR},
+            </if>
+            <if test="tage != null">
+                #{tage,jdbcType=VARCHAR},
+            </if>
+            <if test="status != null">
+                #{status,jdbcType=CHAR},
+            </if>
+            <if test="collegeId != null">
+                #{collegeId,jdbcType=VARCHAR},
+            </if>
+            <if test="qx != null">
+                #{qx,jdbcType=VARCHAR},
+            </if>
+            <if test="begintime != null">
+                #{begintime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="salary != null">
+                #{salary,jdbcType=DOUBLE},
+            </if>
+        </trim>
+    </insert>
+    <select id="countByExample" parameterType="JW.pojo.TTeacherExample"
+            resultType="java.lang.Integer">
+        select count(*) from t_teacher
+        <if test="_parameter != null">
+            <include refid="Example_Where_Clause"/>
+        </if>
+    </select>
+    <update id="updateByExampleSelective" parameterType="map">
+        update t_teacher
+        <set>
+            <if test="record.tid != null">
+                tid = #{record.tid,jdbcType=VARCHAR},
+            </if>
+            <if test="record.password != null">
+                password = #{record.password,jdbcType=VARCHAR},
+            </if>
+            <if test="record.tname != null">
+                tname = #{record.tname,jdbcType=VARCHAR},
+            </if>
+            <if test="record.tsex != null">
+                tsex = #{record.tsex,jdbcType=VARCHAR},
+            </if>
+            <if test="record.tage != null">
+                tage = #{record.tage,jdbcType=VARCHAR},
+            </if>
+            <if test="record.status != null">
+                status = #{record.status,jdbcType=CHAR},
+            </if>
+            <if test="record.collegeId != null">
+                college_id = #{record.collegeId,jdbcType=VARCHAR},
+            </if>
+            <if test="record.qx != null">
+                qx = #{record.qx,jdbcType=VARCHAR},
+            </if>
+            <if test="record.begintime != null">
+                beginTime = #{record.begintime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="record.salary != null">
+                salary = #{record.salary,jdbcType=DOUBLE},
+            </if>
+        </set>
+        <if test="_parameter != null">
+            <include refid="Update_By_Example_Where_Clause"/>
+        </if>
+    </update>
+    <update id="updateByExample" parameterType="map">
+        update t_teacher
+        set tid = #{record.tid,jdbcType=VARCHAR},
+        password =
+        #{record.password,jdbcType=VARCHAR},
+        tname =
+        #{record.tname,jdbcType=VARCHAR},
+        tsex =
+        #{record.tsex,jdbcType=VARCHAR},
+        tage =
+        #{record.tage,jdbcType=VARCHAR},
+        status =
+        #{record.status,jdbcType=CHAR},
+        college_id =
+        #{record.collegeId,jdbcType=VARCHAR},
+        qx =
+        #{record.qx,jdbcType=VARCHAR},
+        beginTime =
+        #{record.begintime,jdbcType=TIMESTAMP},
+        salary =
+        #{record.salary,jdbcType=DOUBLE}
+        <if test="_parameter != null">
+            <include refid="Update_By_Example_Where_Clause"/>
+        </if>
+    </update>
+    <update id="updateByPrimaryKeySelective" parameterType="JW.pojo.TTeacher">
+        update t_teacher
+        <set>
+            <if test="password != null">
+                password = #{password,jdbcType=VARCHAR},
+            </if>
+            <if test="tname != null">
+                tname = #{tname,jdbcType=VARCHAR},
+            </if>
+            <if test="tsex != null">
+                tsex = #{tsex,jdbcType=VARCHAR},
+            </if>
+            <if test="tage != null">
+                tage = #{tage,jdbcType=VARCHAR},
+            </if>
+            <if test="status != null">
+                status = #{status,jdbcType=CHAR},
+            </if>
+            <if test="collegeId != null">
+                college_id = #{collegeId,jdbcType=VARCHAR},
+            </if>
+            <if test="qx != null">
+                qx = #{qx,jdbcType=VARCHAR},
+            </if>
+            <if test="begintime != null">
+                beginTime = #{begintime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="salary != null">
+                salary = #{salary,jdbcType=DOUBLE},
+            </if>
+        </set>
+        where tid = #{tid,jdbcType=VARCHAR}
+    </update>
+    <update id="updateByPrimaryKey" parameterType="JW.pojo.TTeacher">
+        update t_teacher
+        set password   = #{password,jdbcType=VARCHAR},
+            tname      =
+                #{tname,jdbcType=VARCHAR},
+            tsex       = #{tsex,jdbcType=VARCHAR},
+            tage       =
+                #{tage,jdbcType=VARCHAR},
+            status     = #{status,jdbcType=CHAR},
+            college_id =
+                #{collegeId,jdbcType=VARCHAR},
+            qx         = #{qx,jdbcType=VARCHAR},
+            beginTime  =
+                #{begintime,jdbcType=TIMESTAMP},
+            salary     = #{salary,jdbcType=DOUBLE}
+        where tid = #{tid,jdbcType=VARCHAR}
+    </update>
 </mapper>

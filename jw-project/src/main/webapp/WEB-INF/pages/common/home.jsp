@@ -30,25 +30,25 @@
 			title : '公共栏',
 			height : 255,
 			collapsible : true,
-			href : '${pageContext.request.contextPath }/portal/gonggao.action'
+			href : '${pageContext.request.contextPath }/page/portal/gonggao.action'
 		}, {
 			id : 'p2',
 			title : '活动公告',
 			height : 255,
 			collapsible : true,
-			href : '${pageContext.request.contextPath }/portal/daiban.action'
+			href : '${pageContext.request.contextPath }/page/portal/daiban.action'
 		}, {
 			id : 'p3',
 			title : '班级通知',
 			height : 255,
 			collapsible : true,
-			href : '${pageContext.request.contextPath }/portal/yujing.action'
+			href : '${pageContext.request.contextPath }/page/portal/yujing.action'
 		}, {
 			id : 'p4',
 			title : '系统BUG反馈',
 			height : 255,
 			collapsible : true,
-			href : '${pageContext.request.contextPath }/portal/bug.action'
+			href : '${pageContext.request.contextPath }/page/portal/bug.action'
 		} ];
 		$('#layout_portal_portal').portal({
 			border : false,

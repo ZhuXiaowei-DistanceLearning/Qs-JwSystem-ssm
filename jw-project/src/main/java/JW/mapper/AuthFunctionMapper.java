@@ -29,4 +29,6 @@ public interface AuthFunctionMapper {
 	int updateByPrimaryKey(AuthFunction record);
 
 	List<AuthFunction> findAll();
+
+    List<Integer> queryFunctionByRole(String id);
 }

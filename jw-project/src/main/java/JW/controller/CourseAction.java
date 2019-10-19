@@ -32,7 +32,7 @@ public class CourseAction {
 		return result;
 	}
 
-	/**
+	/**d
 	 * subject获取对象
 	 * @return courseAndStudent
 	 * @param natureId
@@ -40,12 +40,8 @@ public class CourseAction {
 	 */
 	@RequestMapping("/add")
 	public String add(TCourse model, String sectionId, String weekId, String teacherTid, String natureId) {
-		model.setSectionId(sectionId);
-		model.setWeekId(weekId);
-		model.setTeacherId(teacherTid);
-		model.setNatureId(natureId);
 		courseService.add(model);
-		return "/base/courseInfo";
+		return "redirect:/page/base/courseInfo.action";
 	}
 
 	@RequestMapping("/findCourseByteacherId")

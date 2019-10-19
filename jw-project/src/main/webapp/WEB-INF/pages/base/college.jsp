@@ -32,8 +32,28 @@
 		$('#addStaffWindow').window("open");
 	}
 
-	function doView() {
-		alert("查看...");
+	function doRedo() {
+        var rows = $("#grid").datagrid("getSelections");
+        if (rows.length == 0) {
+            $.messager.alert("提示信息", "请选择要恢复的记录", "error");
+        } else {
+            let ids = rows[0].id;
+            let url = "${pageContext.request.contextPath}/college/redoCollege.action";
+            $
+                .post(
+                    url,
+                    {
+                        id : ids
+                    },
+                    function(data) {
+                        if (data = 200) {
+                            window.location.reload();
+                            $.messager.alert("提示信息", "恢复成功", "info");
+                        } else {
+                            $.messager.alert("提示信息", "恢复失败", "info");
+                        }
+                    })
+        }
 	}
 
 	function doDelete() {
@@ -49,21 +69,20 @@
 			var ids = array.join(",");
 			/* window.location.href = "${pageContext.request.contextPath}/college/deleteCollege.action?ids="
 					+ ids; */
-			var url = "${pageContext.request.contextPath}/college/deleteCollege.action";
-			$
-					.post(
-							url,
-							{
-								"ids" : ids
-							},
-							function(data) {
-								if (data = 200) {
-									window.location.href = "${pageContext.request.contextPath}/college/page.action";
-									$.messager.alert("提示信息", "删除成功", "info");
-								} else {
-									$.messager.alert("提示信息", "删除失败", "info");
-								}
-							})
+			let url = "${pageContext.request.contextPath}/college/deleteCollege.action";
+			$.ajax({
+				url: url,
+				type: 'post',
+				data:{ids:ids},
+				success: function (data) {
+					if (data = 200) {
+						window.location.reload();
+						$.messager.alert("提示信息", "作废成功", "info");
+					} else {
+						$.messager.alert("提示信息", "作废失败", "info");
+					}
+				}
+			})
 		}
 	}
 
@@ -81,7 +100,12 @@
 		text : '作废',
 		iconCls : 'icon-cancel',
 		handler : doDelete
-	}];
+	}, {
+        id : 'button-undo',
+        text : '修复',
+        iconCls : 'icon-cancel',
+        handler : doRedo
+    }];
 	// 定义列
 	var columns = [ [ {
 		field : 'id',
@@ -128,6 +152,7 @@
 							url : "${pageContext.request.contextPath}/college/pageQuery.action",
 							idField : 'id',
 							columns : columns,
+                            singleSelect:true,
 							onDblClickRow : doDblClickRow
 						});
 
@@ -186,12 +211,11 @@
 
 		<div region="center" style="overflow: auto; padding: 5px;"
 			border="false">
-			<form id="addCollegeForm" action="addCollege.action" method="post">
+			<form id="addCollegeForm" action="${pageContext.request.contextPath }/college/addCollege.action" method="post">
 				<table class="table-edit" width="80%" align="center">
 					<tr class="title">
 						<td colspan="2">学院信息</td>
 					</tr>
-					<!-- TODO 这里完善收派员添加 table -->
 					<tr>
 						<td>学院编号</td>
 						<td><input type="text" name="id" class="easyui-validatebox"
@@ -229,12 +253,11 @@
 
 		<div region="center" style="overflow: auto; padding: 5px;"
 			border="false">
-			<form id="editCollegeForm" action="editCollege.action" method="post">
+			<form id="editCollegeForm" action="${pageContext.request.contextPath }/college/editCollege.action" method="post">
 				<table class="table-edit" width="80%" align="center">
 					<tr class="title">
 						<td colspan="2">学院信息</td>
 					</tr>
-					<!-- TODO 这里完善收派员添加 table -->
 					<input type="hidden" name="id" />
 					<input type="hidden" name="status" />
 					<tr>

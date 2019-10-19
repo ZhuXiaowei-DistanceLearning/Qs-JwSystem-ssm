@@ -24,6 +24,7 @@ import java.util.List;
  * EXAMPE判断状态值
  */
 @Service
+@Transactional
 public class TeacherServiceImpl implements TeacherService {
 	@Autowired
 	private TTeacherMapper teacherMapper;
@@ -71,6 +72,12 @@ public class TeacherServiceImpl implements TeacherService {
 		PageInfo<TTeacher> info = new PageInfo<>(list);
 		result.setTotal(info.getTotal());
 		return result;
+	}
+
+	@Override
+	public List<TTeacher> findListNoStatusAndCollege(String id) {
+		List<TTeacher> list = teacherMapper.findListNoStatusAndCollege(id);
+		return list;
 	}
 
 	@Override

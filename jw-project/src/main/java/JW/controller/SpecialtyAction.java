@@ -18,44 +18,51 @@ import java.util.List;
 @RequestMapping("/specialty")
 public class SpecialtyAction {
 
-	@Autowired
-	private SpecialtyService specialtyService;
+    @Autowired
+    private SpecialtyService specialtyService;
 
-	@RequestMapping("/pageQuery")
-	@ResponseBody
-	public EasyUIDataGridResult pageQuery(Integer page, Integer rows) throws IOException {
-		EasyUIDataGridResult result = specialtyService.pageQuery(page, rows);
-		return result;
-	}
+    @RequestMapping("redoSpecialty")
+    @ResponseBody
+    public String redoSpecialty(String id) {
+        specialtyService.redoSpecialty(id);
+        return "true";
+    }
 
-	@RequestMapping("/addSpecialty")
-	public String addSpecialty(TSpecialty specialty) {
-		specialtyService.add(specialty);
-		return "/base/specialty";
-	}
+    @RequestMapping("/pageQuery")
+    @ResponseBody
+    public EasyUIDataGridResult pageQuery(Integer page, Integer rows) throws IOException {
+        EasyUIDataGridResult result = specialtyService.pageQuery(page, rows);
+        return result;
+    }
 
-	@RequestMapping("/updateSpecialty")
-	public String updateSpecialty(TSpecialty specialty) {
-		specialtyService.update(specialty);
-		return "/base/specialty";
-	}
+    @RequestMapping("/addSpecialty")
+    public String addSpecialty(TSpecialty specialty) {
+        specialtyService.add(specialty);
+        return "redirect:/page/base/specialty.action";
+    }
 
-	@RequestMapping("/delete")
-	public String delete(String ids) {
-		specialtyService.deleteBatch(ids);
-		return "/base/specialty";
-	}
+    @RequestMapping("/updateSpecialty")
+    public String updateSpecialty(TSpecialty specialty) {
+        specialtyService.update(specialty);
+        return "redirect:/page/base/specialty.action";
+    }
 
-	@RequestMapping("/listajax")
-	@ResponseBody
-	public List<TSpecialty> listajax() throws IOException {
-		List<TSpecialty> list = specialtyService.listajax();
-		return list;
-	}
+    @RequestMapping("/delete")
+    public String delete(String ids) {
+        specialtyService.deleteBatch(ids);
+        return "redirect:/page/base/specialty.action";
+    }
 
-	@RequestMapping("/page")
-	public String page() {
-		return "/base/specialty";
-	}
+    @RequestMapping("/listajax")
+    @ResponseBody
+    public List<TSpecialty> listajax(String id) throws IOException {
+        List<TSpecialty> list = specialtyService.listajax(id);
+        return list;
+    }
+
+    @RequestMapping("/page")
+    public String page() {
+        return "/base/specialty";
+    }
 
 }

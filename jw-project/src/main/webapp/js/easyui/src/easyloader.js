@@ -1,12 +1,14 @@
 /**
- * easyloader - jQuery EasyUI
+ * EasyUI for jQuery 1.7.0
  * 
- * Copyright (c) 2009-2013 www.jeasyui.com. All rights reserved.
+ * Copyright (c) 2009-2018 www.jeasyui.com. All rights reserved.
  *
- * Licensed under the GPL or commercial licenses
- * To use it on other terms please contact us: jeasyui@gmail.com
- * http://www.gnu.org/licenses/gpl.txt
- * http://www.jeasyui.com/license_commercial.php
+ * Licensed under the freeware license: http://www.jeasyui.com/license_freeware.php
+ * To use it on other terms please contact us: info@jeasyui.com
+ *
+ */
+/**
+ * easyloader - EasyUI for jQuery
  * 
  */
 (function(){
@@ -28,6 +30,10 @@
 			js:'jquery.progressbar.js',
 			css:'progressbar.css'
 		},
+		tooltip:{
+			js:'jquery.tooltip.js',
+			css:'tooltip.css'
+		},
 		pagination:{
 			js:'jquery.pagination.js',
 			css:'pagination.css',
@@ -48,6 +54,11 @@
 			css:'propertygrid.css',
 			dependencies:['datagrid']
 		},
+		datalist:{
+			js:'jquery.datalist.js',
+			css:'datalist.css',
+			dependencies:['datagrid']
+		},
 		panel: {
 			js:'jquery.panel.js',
 			css:'panel.css'
@@ -65,7 +76,7 @@
 		messager:{
 			js:'jquery.messager.js',
 			css:'messager.css',
-			dependencies:['linkbutton','window','progressbar']
+			dependencies:['linkbutton','dialog','progressbar']
 		},
 		layout:{
 			js:'jquery.layout.js',
@@ -84,15 +95,19 @@
 			css:'tabs.css',
 			dependencies:['panel','linkbutton']
 		},
-		splitbutton:{
-			js:'jquery.splitbutton.js',
-			css:'splitbutton.css',
-			dependencies:['linkbutton','menu']
-		},
 		menubutton:{
 			js:'jquery.menubutton.js',
 			css:'menubutton.css',
 			dependencies:['linkbutton','menu']
+		},
+		splitbutton:{
+			js:'jquery.splitbutton.js',
+			css:'splitbutton.css',
+			dependencies:['menubutton']
+		},
+		switchbutton:{
+			js:'jquery.switchbutton.js',
+			css:'switchbutton.css'
 		},
 		accordion:{
 			js:'jquery.accordion.js',
@@ -103,10 +118,38 @@
 			js:'jquery.calendar.js',
 			css:'calendar.css'
 		},
+		textbox:{
+			js:'jquery.textbox.js',
+			css:'textbox.css',
+			dependencies:['validatebox','linkbutton']
+		},
+		passwordbox:{
+			js:'jquery.passwordbox.js',
+			css:'passwordbox.css',
+			dependencies:['textbox']
+		},
+		filebox:{
+			js:'jquery.filebox.js',
+			css:'filebox.css',
+			dependencies:['textbox']
+		},
+		radiobutton:{
+			js:'jquery.radiobutton.js',
+			css:'radiobutton.css'
+		},
+		checkbox:{
+			js:'jquery.checkbox.js',
+			css:'checkbox.css'
+		},
+		sidemenu:{
+			js:'jquery.sidemenu.js',
+			css:'sidemenu.css',
+			dependencies:['accordion','tree','tooltip']
+		},
 		combo:{
 			js:'jquery.combo.js',
 			css:'combo.css',
-			dependencies:['panel','validatebox']
+			dependencies:['panel','textbox']
 		},
 		combobox:{
 			js:'jquery.combobox.js',
@@ -121,23 +164,32 @@
 			js:'jquery.combogrid.js',
 			dependencies:['combo','datagrid']
 		},
+		combotreegrid:{
+			js:'jquery.combotreegrid.js',
+			dependencies:['combo','treegrid']
+		},
+		tagbox:{
+			js:'jquery.tagbox.js',
+			dependencies:['combobox']
+		},
 		validatebox:{
 			js:'jquery.validatebox.js',
-			css:'validatebox.css'
+			css:'validatebox.css',
+			dependencies:['tooltip']
 		},
 		numberbox:{
 			js:'jquery.numberbox.js',
-			dependencies:['validatebox']
+			dependencies:['textbox']
 		},
 		searchbox:{
 			js:'jquery.searchbox.js',
 			css:'searchbox.css',
-			dependencies:['menubutton']
+			dependencies:['menubutton','textbox']
 		},
 		spinner:{
 			js:'jquery.spinner.js',
 			css:'spinner.css',
-			dependencies:['validatebox']
+			dependencies:['textbox']
 		},
 		numberspinner:{
 			js:'jquery.numberspinner.js',
@@ -167,24 +219,32 @@
 		},
 		parser:{
 			js:'jquery.parser.js'
+		},
+		mobile:{
+			js:'jquery.mobile.js'
 		}
 	};
 	
 	var locales = {
 		'af':'easyui-lang-af.js',
+		'ar':'easyui-lang-ar.js',
 		'bg':'easyui-lang-bg.js',
 		'ca':'easyui-lang-ca.js',
 		'cs':'easyui-lang-cs.js',
 		'cz':'easyui-lang-cz.js',
 		'da':'easyui-lang-da.js',
 		'de':'easyui-lang-de.js',
+		'el':'easyui-lang-el.js',
 		'en':'easyui-lang-en.js',
 		'es':'easyui-lang-es.js',
 		'fr':'easyui-lang-fr.js',
 		'it':'easyui-lang-it.js',
+		'jp':'easyui-lang-jp.js',
 		'nl':'easyui-lang-nl.js',
+		'pl':'easyui-lang-pl.js',
 		'pt_BR':'easyui-lang-pt_BR.js',
 		'ru':'easyui-lang-ru.js',
+		'sv_SE':'easyui-lang-sv_SE.js',
 		'tr':'easyui-lang-tr.js',
 		'zh_CN':'easyui-lang-zh_CN.js',
 		'zh_TW':'easyui-lang-zh_TW.js'

@@ -3,162 +3,280 @@ package JW.pojo;
 import java.util.List;
 
 public class TCourse {
-	private String id;
+    private String id;
 
-	private String name;
+    private String name;
 
-	private Integer credit;
+    private Integer credit;
 
-	private String classroom;
+    private String classroom;
 
-	private Integer people = 0;
+    private Integer people = 0;
 
-	private String sectionId;
+    private String sectionId;
 
-	private String weekId;
+    private String weekId;
 
-	private String teacherId;
+    private String teacherId;
 
-	private String natureId;
+    private String natureId;
 
-	private Integer totalpeople;
+    private Integer totalpeople;
 
-	private TSection section;
+    private String teamId;
 
-	private TWeek week;
+    private Integer totalTime;
 
-	private TNature nature;
+    private Integer point;
 
-	private TTeacher teacher;
+    private String wayId;
 
-	private List<TStudent> student;
+    private String cstatusId;
 
-	public String getWeekAnsection() {
-		return section.getSectionTime() + "{" + week.getTime() + "}";
-	}
+    private String status;
 
-	public String getShowpeople() {
-		return people + "/" + totalpeople;
-	}
+    private Integer isexam;
 
-	public String getId() {
-		return id;
-	}
+    private String collegeId;
 
-	public void setId(String id) {
-		this.id = id == null ? null : id.trim();
-	}
+    private TSection section;
 
-	public String getName() {
-		return name;
-	}
+    private TWeek week;
 
-	public void setName(String name) {
-		this.name = name == null ? null : name.trim();
-	}
+    private TNature nature;
 
-	public Integer getCredit() {
-		return credit;
-	}
+    private TTeacher teacher;
 
-	public void setCredit(Integer credit) {
-		this.credit = credit;
-	}
+    private List<TStudent> student;
 
-	public String getClassroom() {
-		return classroom;
-	}
+    private TCollege college;
 
-	public void setClassroom(String classroom) {
-		this.classroom = classroom == null ? null : classroom.trim();
-	}
+    private TExamway examway;
+    private TCstatus cstatus;
+    private TTeam team;
 
-	public Integer getPeople() {
-		return people;
-	}
+    public TExamway getExamway() {
+        return examway;
+    }
 
-	public void setPeople(Integer people) {
-		this.people = people;
-	}
+    public void setExamway(TExamway examway) {
+        this.examway = examway;
+    }
 
-	public String getSectionId() {
-		return sectionId;
-	}
+    public TCstatus getCstatus() {
+        return cstatus;
+    }
 
-	public void setSectionId(String sectionId) {
-		this.sectionId = sectionId == null ? null : sectionId.trim();
-	}
+    public void setCstatus(TCstatus cstatus) {
+        this.cstatus = cstatus;
+    }
 
-	public String getWeekId() {
-		return weekId;
-	}
+    public TTeam getTeam() {
+        return team;
+    }
 
-	public void setWeekId(String weekId) {
-		this.weekId = weekId == null ? null : weekId.trim();
-	}
+    public void setTeam(TTeam team) {
+        this.team = team;
+    }
 
-	public String getTeacherId() {
-		return teacherId;
-	}
+    public TCollege getCollege() {
+        return college;
+    }
 
-	public void setTeacherId(String teacherId) {
-		this.teacherId = teacherId == null ? null : teacherId.trim();
-	}
+    public void setCollege(TCollege college) {
+        this.college = college;
+    }
 
-	public String getNatureId() {
-		return natureId;
-	}
+    public String getTeamId() {
+        return teamId;
+    }
 
-	public void setNatureId(String natureId) {
-		this.natureId = natureId == null ? null : natureId.trim();
-	}
+    public void setTeamId(String teamId) {
+        this.teamId = teamId;
+    }
 
-	public Integer getTotalpeople() {
-		return totalpeople;
-	}
+    public Integer getTotalTime() {
+        return totalTime;
+    }
 
-	public void setTotalpeople(Integer totalpeople) {
-		this.totalpeople = totalpeople;
-	}
+    public void setTotalTime(Integer totalTime) {
+        this.totalTime = totalTime;
+    }
 
-	public TSection getSection() {
-		return section;
-	}
+    public Integer getPoint() {
+        return point;
+    }
 
-	public void setSection(TSection section) {
-		this.section = section;
-	}
+    public void setPoint(Integer point) {
+        this.point = point;
+    }
 
-	public TWeek getWeek() {
-		return week;
-	}
+    public String getWayId() {
+        return wayId;
+    }
 
-	public void setWeek(TWeek week) {
-		this.week = week;
-	}
+    public void setWayId(String wayId) {
+        this.wayId = wayId;
+    }
 
-	public TNature getNature() {
-		return nature;
-	}
+    public String getCstatusId() {
+        return cstatusId;
+    }
 
-	public void setNature(TNature nature) {
-		this.nature = nature;
-	}
+    public void setCstatusId(String cstatusId) {
+        this.cstatusId = cstatusId;
+    }
 
-	public TTeacher getTeacher() {
-		return teacher;
-	}
+    public String getStatus() {
+        return status;
+    }
 
-	public void setTeacher(TTeacher teacher) {
-		this.teacher = teacher;
-	}
+    public void setStatus(String status) {
+        this.status = status;
+    }
 
-	public List<TStudent> getStudent() {
-		return student;
-	}
+    public Integer getIsexam() {
+        return isexam;
+    }
 
-	public void setStudent(List<TStudent> student) {
-		this.student = student;
-	}
+    public void setIsexam(Integer isexam) {
+        this.isexam = isexam;
+    }
+
+    public String getCollegeId() {
+        return collegeId;
+    }
+
+    public void setCollegeId(String collegeId) {
+        this.collegeId = collegeId;
+    }
+
+    public String getWeekAnsection() {
+        return section.getSectionTime() + "{" + week.getTime() + "}";
+    }
+
+    public String getShowpeople() {
+        return people + "/" + totalpeople;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id == null ? null : id.trim();
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name == null ? null : name.trim();
+    }
+
+    public Integer getCredit() {
+        return credit;
+    }
+
+    public void setCredit(Integer credit) {
+        this.credit = credit;
+    }
+
+    public String getClassroom() {
+        return classroom;
+    }
+
+    public void setClassroom(String classroom) {
+        this.classroom = classroom == null ? null : classroom.trim();
+    }
+
+    public Integer getPeople() {
+        return people;
+    }
+
+    public void setPeople(Integer people) {
+        this.people = people;
+    }
+
+    public String getSectionId() {
+        return sectionId;
+    }
+
+    public void setSectionId(String sectionId) {
+        this.sectionId = sectionId == null ? null : sectionId.trim();
+    }
+
+    public String getWeekId() {
+        return weekId;
+    }
+
+    public void setWeekId(String weekId) {
+        this.weekId = weekId == null ? null : weekId.trim();
+    }
+
+    public String getTeacherId() {
+        return teacherId;
+    }
+
+    public void setTeacherId(String teacherId) {
+        this.teacherId = teacherId == null ? null : teacherId.trim();
+    }
+
+    public String getNatureId() {
+        return natureId;
+    }
+
+    public void setNatureId(String natureId) {
+        this.natureId = natureId == null ? null : natureId.trim();
+    }
+
+    public Integer getTotalpeople() {
+        return totalpeople;
+    }
+
+    public void setTotalpeople(Integer totalpeople) {
+        this.totalpeople = totalpeople;
+    }
+
+    public TSection getSection() {
+        return section;
+    }
+
+    public void setSection(TSection section) {
+        this.section = section;
+    }
+
+    public TWeek getWeek() {
+        return week;
+    }
+
+    public void setWeek(TWeek week) {
+        this.week = week;
+    }
+
+    public TNature getNature() {
+        return nature;
+    }
+
+    public void setNature(TNature nature) {
+        this.nature = nature;
+    }
+
+    public TTeacher getTeacher() {
+        return teacher;
+    }
+
+    public void setTeacher(TTeacher teacher) {
+        this.teacher = teacher;
+    }
+
+    public List<TStudent> getStudent() {
+        return student;
+    }
+
+    public void setStudent(List<TStudent> student) {
+        this.student = student;
+    }
 
 }

@@ -23,4 +23,6 @@ public interface CollegeService {
 
 	public void save(TCollege model);
 
+	public void collectRedo(String id);
+
 }

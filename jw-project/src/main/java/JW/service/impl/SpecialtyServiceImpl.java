@@ -1,5 +1,6 @@
 package JW.service.impl;
 
+import JW.pojo.TCollege;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -54,11 +55,12 @@ public class SpecialtyServiceImpl implements SpecialtyService {
 	}
 
 	/**
-	 * FINDALLPAGEHELPINFODATAGRIDRESULT
+	 *
 	 */
 	@Override
-	public List<TSpecialty> listajax() {
+	public List<TSpecialty> listajax(String id) {
 		TSpecialtyExample example = new TSpecialtyExample();
+		example.createCriteria().andCollegeIdEqualTo(id);
 		List<TSpecialty> list = specialtyMapper.selectByExample(example);
 		return list;
 	}
@@ -73,6 +75,15 @@ public class SpecialtyServiceImpl implements SpecialtyService {
 		long total = pageInfo.getTotal();
 		result.setTotal(total);
 		return result;
+	}
+
+	@Override
+	public void redoSpecialty(String id) {
+		TSpecialty tCollege = specialtyMapper.selectByPrimaryKey(id);
+		if (tCollege.getStatus().equals("1")) {
+			tCollege.setStatus("0");
+			specialtyMapper.updateByPrimaryKey(tCollege);
+		}
 	}
 
 }

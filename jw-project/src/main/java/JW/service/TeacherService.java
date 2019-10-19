@@ -18,4 +18,6 @@ public interface TeacherService {
 	public TTeacher findByUsername(String username);
 
 	public EasyUIDataGridResult pageQuery(Integer page, Integer rows);
+
+	List<TTeacher> findListNoStatusAndCollege(String id);
 }

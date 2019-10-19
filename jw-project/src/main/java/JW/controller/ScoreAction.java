@@ -18,6 +18,7 @@ import pojo.EasyUIDataGridResult;
 import utils.E3Result;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
@@ -119,7 +120,7 @@ public class ScoreAction {
 			score.setScore("F");
 		}
 		scoreService.saveScore(score);
-		return "/teacher/course";
+		return "redirect:/course/addScorePage.action?courseid="+score.getCourseId();
 	}
 
 	/**
@@ -174,6 +175,7 @@ public class ScoreAction {
 		Subject subject = SecurityUtils.getSubject();
 		TStudent student = (TStudent) subject.getPrincipal();
 		List<TScore> list = scoreService.findStudentScore(student.getSid());
+		List<TScore> scores = new ArrayList<>();
 		return list;
 	}
 

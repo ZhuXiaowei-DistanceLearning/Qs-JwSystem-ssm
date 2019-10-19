@@ -47,7 +47,7 @@ public class CollegeAction {
 	@RequestMapping("addCollege")
 	public String addCollege(TCollege model) {
 		collegeService.save(model);
-		return "/base/college";
+		return "redirect:/page/base/college.action";
 	}
 
 	/**
@@ -62,6 +62,13 @@ public class CollegeAction {
 		return result;
 	}
 
+	@RequestMapping("redoCollege")
+	@ResponseBody
+	public String redoCollege(String id) {
+		collegeService.collectRedo(id);
+		return "true";
+	}
+
 	/**
 	 * findListNostatus找到
 	 *
@@ -70,17 +77,10 @@ public class CollegeAction {
 	@RequestMapping("editCollege")
 	public String editCollege(TCollege model) {
 		collegeService.edit(model);
-		return "/base/college";
+		return "redirect:/page/base/college.action";
 	}
 
 	/**
-		String[] excludes = { "teachers", "specialties" };
-		JsonConfig jsonConfig = new JsonConfig();
-		jsonConfig.setExcludes(excludes);
-		JSONArray jsonObject = JSONArray.fromObject(list, jsonConfig);
-		String json = jsonObject.toString();
-		response.setContentType("text/json;charset=utf-8");
-		response.getWriter().print(json);
 	 * 查询列表
 	 */
 	@RequestMapping("listajax")

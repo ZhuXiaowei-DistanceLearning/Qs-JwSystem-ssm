@@ -63,7 +63,7 @@ public class LoginAction {
 			if (user != null) {
 				subjectSession.setAttribute("user", user);
 				subjectSession.setAttribute("onlineNum", subjectSession.getId());
-				return E3Result.ok(200);
+					return E3Result.ok(200);
 			} else {
 				return E3Result.build(114, "用户名或密码错误!");
 			}

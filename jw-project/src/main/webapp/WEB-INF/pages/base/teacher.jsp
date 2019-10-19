@@ -210,7 +210,6 @@
 					<tr class="title">
 						<td colspan="2">专业信息</td>
 					</tr>
-					<!-- TODO 这里完善收派员添加 table -->
 					<tr>
 						<td>课程名称</td>
 						<td><input type="text" name="classname"
@@ -256,7 +255,6 @@
 					<tr class="title">
 						<td colspan="2">学院信息</td>
 					</tr>
-					<!-- TODO 这里完善收派员添加 table -->
 					<input type="hidden" name="id" />
 					<input type="hidden" name="status" />
 					<tr>

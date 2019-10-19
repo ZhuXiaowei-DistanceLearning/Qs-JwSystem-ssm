@@ -69,6 +69,12 @@ public class FunctionServiceImpl implements FunctionService {
 	public void save(AuthFunction model) {
 		functionMapper.insert(model);
 	}
+
+	@Override
+	public void update(String ids) {
+	}
+
+
 	/**
 	 * FINDBYSTUDENTTID
 	 * 判断list值
@@ -104,5 +110,11 @@ public class FunctionServiceImpl implements FunctionService {
 		PageInfo<AuthFunction> info = new PageInfo<>(list);
 		result.setTotal(info.getTotal());
 		return result;
+	}
+
+	@Override
+	public List<Integer> queryFunctionByRole(String id) {
+		List<Integer> list = functionMapper.queryFunctionByRole(id);
+		return list;
 	}
 }

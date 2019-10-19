@@ -40,19 +40,19 @@ public class ClassesAction {
 	@RequestMapping("/add")
 	public String add(TClasses model) {
 		classesSerivce.save(model);
-		return "/base/classes";
+		return "redirect:/page/base/classes.action";
 	}
 
 	@RequestMapping("/delete")
 	public String delete(String ids) {
 		classesSerivce.deleteBatch(ids);
-		return "/base/classes";
+		return "redirect:/page/base/classes.action";
 	}
 
 	@RequestMapping("/findById")
 	public String findById(String ids, HttpSession session) {
 		session.setAttribute("classes_id", ids);
-		return "/base/studentInfo";
+		return "redirect:/page/base/studentInfo.action";
 	}
 
 	/**
@@ -69,6 +69,6 @@ public class ClassesAction {
 
 	@RequestMapping("/page")
 	public String page() {
-		return "/base/classes";
+		return "redirect:/page/base/classes.action";
 	}
 }

@@ -40,10 +40,23 @@ public class FunctionAction {
         return list;
     }
 
+    @RequestMapping("/queryFunctionByRole")
+    @ResponseBody
+    public List<Integer> queryFunctionByRole(String id) throws IOException {
+        List<Integer> list = functionSerivce.queryFunctionByRole(id);
+        return list;
+    }
+
     @RequestMapping("/add")
     public String add(AuthFunction function) {
         functionSerivce.save(function);
-        return "/admin/function";
+        return "redirect:/page/admin/function.action";
+    }
+
+    @RequestMapping("/update")
+    public void update(String ids,String roleId){
+        System.out.println(ids);
+        System.out.println(roleId.toString());
     }
 
     /**

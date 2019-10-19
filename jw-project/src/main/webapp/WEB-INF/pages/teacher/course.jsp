@@ -223,6 +223,7 @@
 					plain="true">保存</a>
 				<script type="text/javascript">
 					$("#editSave").click(function() {
+						$.messager.alert("提示信息", "添加成功", "warning");
 						$("#TruantWindow").window("close");
 					});
 				</script>
@@ -266,6 +267,7 @@
 												.serialize(), function(data) {
 											alert(data);
 										})
+										$.messager.alert("提示信息", "添加成功", "warning");
 										$("#lateStaffWindow").window("close");
 									});
 				</script>

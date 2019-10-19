@@ -185,7 +185,7 @@
 				style="width: 100%; height: 100%; overflow: hidden">
 				<iframe src="${pageContext.request.contextPath }/portal/home.action"
 					style="width: 100%; height: 100%; border: 0;"></iframe>
-				<%--				这里显示公告栏、预警信息和代办事宜--%>
+				<%--				这里显示公告栏--%>
 			</div>
 		</div>
 	</div>
@@ -259,7 +259,7 @@
 								var v1 = $("#txtNewPass").val();
 								var v2 = $("#txtRePass").val();
 								if (v1 == v2) {
-									var url = '${pageContext.request.contextPath}/userAction_editPassword.action'
+									var url = '${pageContext.request.contextPath}/user/editPassword.action'
 									$.post(url, {
 										"password" : v1
 									}, function(data) {
@@ -315,8 +315,7 @@
 		}); */
 	</script>
 	
-	//websocket异步实现
-	<script>
+	<%--<script>
 		var websocket = null;
 	    //判断当前浏览器是否支持WebSocket
 	    if ('WebSocket' in window) {
@@ -362,6 +361,6 @@
 	        websocket.close();
 	    }
 
-	</script>
+	</script>--%>
 </body>
 </html>

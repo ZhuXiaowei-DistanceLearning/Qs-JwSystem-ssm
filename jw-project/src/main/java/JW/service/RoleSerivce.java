@@ -11,7 +11,11 @@ import java.util.List;
 public interface RoleSerivce {
 	public void save(AuthRole model, String ids);
 
+	public void update(String ids, String roleId);
+
 	public List<AuthRole> findAll();
 
 	public EasyUIDataGridResult pageQuery(Integer page, Integer rows);
+
+	void deleteRole(String roleId);
 }

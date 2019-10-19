@@ -33,13 +33,20 @@ public class TeacherAction {
 		return list;
 	}
 
+	@RequestMapping("/teacherByCollege")
+	@ResponseBody
+	public List<TTeacher> teacherByCollege(String id) throws IOException {
+		List<TTeacher> list = teacherService.findListNoStatusAndCollege(id);
+		return list;
+	}
+
 	/**
 	 * 添加用户
 	 */
 	@RequestMapping("/add")
 	public String add(TTeacher teacher, String roleIds) {
 		teacherService.save(teacher, roleIds);
-		return "/base/teacher";
+		return "redirect:/page/base/teacher.action";
 	}
 
 	@RequestMapping("/page")

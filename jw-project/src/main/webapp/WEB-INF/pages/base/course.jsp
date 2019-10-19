@@ -120,7 +120,41 @@
 		formatter : function(data, row, index) {
 			return row.teacher.college.name;
 		}
-	} ] ];
+	}, {
+		field : 'credit',
+		title : '学分',
+		width : 150,
+		align : 'center'
+	}, {
+		field : 'total_time',
+		title : '总学时',
+		width : 150,
+		align : 'center'
+	}, {
+		field : 'examway',
+		title : '考核方式',
+		width : 150,
+		align : 'center',
+		formatter : function(data, row, index) {
+			return row.examway.name;
+		}
+	} , {
+		field : 'csName',
+		title : '课程属性',
+		width : 150,
+		align : 'center',
+		formatter : function(data, row, index) {
+			return row.cstatus.name;
+		}
+	}, {
+		field : 'collegeName',
+		title : '课程性质',
+		width : 150,
+		align : 'center',
+		formatter : function(data, row, index) {
+			return row.nature.name;
+		}
+	}] ];
 
 	$(function() {
 		// 先将body隐藏，再显示，不会出现页面刷新效果

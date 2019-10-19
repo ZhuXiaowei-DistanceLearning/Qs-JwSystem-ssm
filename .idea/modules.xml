@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/RemoteSystemsTempFiles/RemoteSystemsTempFiles.iml" filepath="$PROJECT_DIR$/RemoteSystemsTempFiles/RemoteSystemsTempFiles.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jw-common/jw-common.iml" filepath="$PROJECT_DIR$/jw-common/jw-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jw-parent/jw-parent.iml" filepath="$PROJECT_DIR$/jw-parent/jw-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jw-project/jw-project.iml" filepath="$PROJECT_DIR$/jw-project/jw-project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pagehelper/pagehelper.iml" filepath="$PROJECT_DIR$/pagehelper/pagehelper.iml" />
+    </modules>
+  </component>
+</project>

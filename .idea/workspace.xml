@@ -1,0 +1,1826 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="jw-project:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="aff0c7fe-02c9-4137-85be-a1e66322169c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/jw_project_Web_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/jw_project_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/zxw.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__asm_asm_3_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__cglib_cglib_2_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_atomikos_atomikos_util_3_9_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_atomikos_transactions_3_9_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_atomikos_transactions_api_3_9_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_atomikos_transactions_jdbc_3_9_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_atomikos_transactions_jta_3_9_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_4_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_4_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_4_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_fommil_jniloader_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_fommil_netlib_core_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_fommil_netlib_native_ref_java_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_fommil_netlib_native_system_java_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_fommil_netlib_netlib_native_ref_linux_armhf_natives_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_fommil_netlib_netlib_native_ref_linux_i686_natives_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_fommil_netlib_netlib_native_ref_linux_x86_64_natives_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_fommil_netlib_netlib_native_ref_osx_x86_64_natives_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_fommil_netlib_netlib_native_ref_win_i686_natives_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_fommil_netlib_netlib_native_ref_win_x86_64_natives_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_fommil_netlib_netlib_native_system_linux_armhf_natives_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_fommil_netlib_netlib_native_system_linux_i686_natives_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_fommil_netlib_netlib_native_system_linux_x86_64_natives_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_fommil_netlib_netlib_native_system_osx_x86_64_natives_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_fommil_netlib_netlib_native_system_win_i686_natives_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_fommil_netlib_netlib_native_system_win_x86_64_natives_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jsqlparser_jsqlparser_0_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_googlecode_matrix_toolkits_java_mtj_1_0_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_googlecode_netlib_java_netlib_java_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_okhttp3_okhttp_3_8_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_okio_okio_1_13_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_mail_javax_mail_1_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_8_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_dbcp_commons_dbcp_1_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_fileupload_commons_fileupload_1_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_pool_commons_pool_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_socket_engine_io_client_1_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_socket_socket_io_client_1_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_activation_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_javaee_api_7_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_servlet_api_2_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jstl_jstl_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_3_8_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_32.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_ezmorph_ezmorph_1_0_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_json_lib_json_lib_jdk15_2_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sourceforge_f2j_arpack_combined_all_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__nz_ac_waikato_cms_weka_WekaExcel_1_0_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__nz_ac_waikato_cms_weka_thirdparty_bounce_0_18.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__nz_ac_waikato_cms_weka_thirdparty_java_cup_11b_2015_03_26.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__nz_ac_waikato_cms_weka_thirdparty_java_cup_11b_runtime_2015_03_26.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__nz_ac_waikato_cms_weka_weka_dev_3_9_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ognl_ognl_2_6_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_derby_derby_10_10_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_0_beta9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_core_2_0_beta9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_3_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_ooxml_3_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_ooxml_schemas_3_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_cas_1_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_core_1_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_spring_1_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_web_1_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xmlbeans_xmlbeans_2_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_6_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_core_asl_1_9_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_mapper_asl_1_9_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_directwebremoting_dwr_3_0_M1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jasig_cas_client_cas_client_core_3_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_17_1_GA.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_json_json_20090211.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mortbay_jetty_cometd_6_1_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mortbay_jetty_jetty_util_6_1_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_2_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_1_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_7_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_batch_spring_batch_infrastructure_2_2_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_retry_spring_retry_1_0_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_3_1_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_asm_3_1_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_3_1_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_3_1_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_3_1_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_3_1_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_3_1_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_3_1_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_3_1_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_3_1_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_3_1_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_3_1_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__stax_stax_api_1_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__taglibs_standard_1_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xml_apis_xml_apis_1_0_b2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/java/JW/controller/CStatusController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/java/JW/controller/TeamController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/java/JW/controller/WayController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/java/JW/mapper/TCstatusMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/java/JW/mapper/TCstatusMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/java/JW/mapper/TExamwayMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/java/JW/mapper/TExamwayMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/java/JW/mapper/TTeamMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/java/JW/mapper/TTeamMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/java/JW/pojo/TCstatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/java/JW/pojo/TCstatusExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/java/JW/pojo/TExamway.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/java/JW/pojo/TExamwayExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/java/JW/pojo/TTeam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/java/JW/pojo/TTeamExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/java/JW/service/impl/CStatusService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/java/JW/service/impl/TeamService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/java/JW/service/impl/WayService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/WEB-INF/pages/portal/bug.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/WEB-INF/pages/portal/daiban.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/WEB-INF/pages/portal/gonggao.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/WEB-INF/pages/portal/yujing.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/locale/easyui-lang-af.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/locale/easyui-lang-am.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/locale/easyui-lang-ar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/locale/easyui-lang-bg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/locale/easyui-lang-ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/locale/easyui-lang-cs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/locale/easyui-lang-cz.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/locale/easyui-lang-da.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/locale/easyui-lang-de.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/locale/easyui-lang-el.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/locale/easyui-lang-en.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/locale/easyui-lang-es.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/locale/easyui-lang-fa.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/locale/easyui-lang-fr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/locale/easyui-lang-it.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/locale/easyui-lang-jp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/locale/easyui-lang-ko.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/locale/easyui-lang-nl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/locale/easyui-lang-pl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/locale/easyui-lang-pt_BR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/locale/easyui-lang-ru.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/locale/easyui-lang-sv_SE.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/locale/easyui-lang-tr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/locale/easyui-lang-ua.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/locale/easyui-lang-zh_TW.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/plugins/jquery.checkbox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/plugins/jquery.combotreegrid.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/plugins/jquery.datalist.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/plugins/jquery.datetimespinner.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/plugins/jquery.filebox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/plugins/jquery.maskedbox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/plugins/jquery.mobile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/plugins/jquery.passwordbox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/plugins/jquery.radiobutton.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/plugins/jquery.sidemenu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/plugins/jquery.switchbutton.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/plugins/jquery.tagbox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/plugins/jquery.textbox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/plugins/jquery.tooltip.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/angular.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/black/checkbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/black/datalist.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/black/filebox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/black/images/passwordbox_close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/black/images/passwordbox_open.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/black/images/tagbox_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/black/numberbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/black/passwordbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/black/radiobutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/black/sidemenu.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/black/switchbutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/black/tagbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/black/textbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/black/tooltip.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/bootstrap/checkbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/bootstrap/datalist.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/bootstrap/filebox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/bootstrap/images/passwordbox_close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/bootstrap/images/passwordbox_open.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/bootstrap/images/tagbox_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/bootstrap/numberbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/bootstrap/passwordbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/bootstrap/radiobutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/bootstrap/sidemenu.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/bootstrap/switchbutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/bootstrap/tagbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/bootstrap/textbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/bootstrap/tooltip.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/color.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/default/checkbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/default/datalist.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/default/filebox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/default/images/passwordbox_close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/default/images/passwordbox_open.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/default/images/tagbox_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/default/numberbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/default/passwordbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/default/radiobutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/default/sidemenu.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/default/switchbutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/default/tagbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/default/textbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/default/tooltip.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/gray/checkbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/gray/datalist.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/gray/filebox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/gray/images/passwordbox_close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/gray/images/passwordbox_open.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/gray/images/tagbox_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/gray/numberbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/gray/passwordbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/gray/radiobutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/gray/sidemenu.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/gray/switchbutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/gray/tagbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/gray/textbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/gray/tooltip.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/icons/clear.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/icons/filter.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/icons/large_chart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/icons/large_clipart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/icons/large_picture.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/icons/large_shapes.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/icons/large_smartart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/icons/lock.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/icons/man.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/icons/more.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material-teal/accordion.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material-teal/calendar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material-teal/checkbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material-teal/combo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material-teal/combobox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material-teal/datagrid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material-teal/datalist.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material-teal/datebox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material-teal/dialog.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material-teal/easyui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material-teal/filebox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material-teal/images/Thumbs.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material-teal/images/accordion_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material-teal/images/blank.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material-teal/images/calendar_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material-teal/images/combo_arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material-teal/images/datagrid_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material-teal/images/datebox_arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material-teal/images/layout_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material-teal/images/linkbutton_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material-teal/images/loading.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material-teal/images/menu_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material-teal/images/messager_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material-teal/images/pagination_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material-teal/images/panel_tools.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material-teal/images/passwordbox_close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material-teal/images/passwordbox_open.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material-teal/images/searchbox_button.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material-teal/images/slider_handle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material-teal/images/spinner_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material-teal/images/tabs_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material-teal/images/tagbox_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material-teal/images/tree_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material-teal/images/validatebox_warning.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material-teal/layout.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material-teal/linkbutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material-teal/menu.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material-teal/menubutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material-teal/messager.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material-teal/numberbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material-teal/pagination.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material-teal/panel.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material-teal/passwordbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material-teal/progressbar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material-teal/propertygrid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material-teal/radiobutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material-teal/searchbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material-teal/sidemenu.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material-teal/slider.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material-teal/spinner.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material-teal/splitbutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material-teal/switchbutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material-teal/tabs.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material-teal/tagbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material-teal/textbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material-teal/tooltip.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material-teal/tree.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material-teal/validatebox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material-teal/window.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material/accordion.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material/calendar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material/checkbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material/combo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material/combobox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material/datagrid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material/datalist.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material/datebox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material/dialog.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material/easyui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material/filebox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material/images/Thumbs.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material/images/accordion_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material/images/blank.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material/images/calendar_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material/images/combo_arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material/images/datagrid_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material/images/datebox_arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material/images/layout_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material/images/linkbutton_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material/images/loading.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material/images/menu_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material/images/messager_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material/images/pagination_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material/images/panel_tools.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material/images/passwordbox_close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material/images/passwordbox_open.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material/images/searchbox_button.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material/images/slider_handle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material/images/spinner_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material/images/tabs_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material/images/tagbox_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material/images/tree_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material/images/validatebox_warning.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material/layout.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material/linkbutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material/menu.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material/menubutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material/messager.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material/numberbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material/pagination.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material/panel.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material/passwordbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material/progressbar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material/propertygrid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material/radiobutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material/searchbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material/sidemenu.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material/slider.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material/spinner.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material/splitbutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material/switchbutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material/tabs.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material/tagbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material/textbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material/tooltip.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material/tree.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material/validatebox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/material/window.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/metro/checkbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/metro/datalist.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/metro/filebox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/metro/images/passwordbox_close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/metro/images/passwordbox_open.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/metro/images/tagbox_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/metro/numberbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/metro/passwordbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/metro/radiobutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/metro/sidemenu.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/metro/switchbutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/metro/tagbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/metro/textbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/metro/tooltip.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/mobile.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/react.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/vue.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-common/src/main/java/pojo/EasyUITreeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/jw-common/src/main/java/pojo/EasyUITreeNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-common/target/classes/pojo/EasyUITreeNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/jw-common/target/classes/pojo/EasyUITreeNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/java/JW/controller/ClassesAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/java/JW/controller/ClassesAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/java/JW/controller/CollegeAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/java/JW/controller/CollegeAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/java/JW/controller/CourseAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/java/JW/controller/CourseAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/java/JW/controller/FunctionAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/java/JW/controller/FunctionAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/java/JW/controller/LoginAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/java/JW/controller/LoginAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/java/JW/controller/RoleAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/java/JW/controller/RoleAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/java/JW/controller/ScoreAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/java/JW/controller/ScoreAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/java/JW/controller/SpecialtyAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/java/JW/controller/SpecialtyAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/java/JW/controller/TeacherAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/java/JW/controller/TeacherAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/java/JW/controller/UserAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/java/JW/controller/UserAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/java/JW/mapper/AuthFunctionMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/java/JW/mapper/AuthFunctionMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/java/JW/mapper/AuthFunctionMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/java/JW/mapper/AuthFunctionMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/java/JW/mapper/AuthRoleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/java/JW/mapper/AuthRoleMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/java/JW/mapper/AuthRoleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/java/JW/mapper/AuthRoleMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/java/JW/mapper/TCourseMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/java/JW/mapper/TCourseMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/java/JW/mapper/TCourseMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/java/JW/mapper/TCourseMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/java/JW/mapper/TScoreMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/java/JW/mapper/TScoreMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/java/JW/mapper/TSpecialtyMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/java/JW/mapper/TSpecialtyMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/java/JW/mapper/TTeacherMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/java/JW/mapper/TTeacherMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/java/JW/mapper/TTeacherMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/java/JW/mapper/TTeacherMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/java/JW/pojo/AuthRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/java/JW/pojo/AuthRole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/java/JW/pojo/StudentRoleExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/java/JW/pojo/StudentRoleExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/java/JW/pojo/TCourse.java" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/java/JW/pojo/TCourse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/java/JW/pojo/TTeacher.java" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/java/JW/pojo/TTeacher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/java/JW/service/CollegeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/java/JW/service/CollegeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/java/JW/service/FunctionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/java/JW/service/FunctionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/java/JW/service/RoleSerivce.java" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/java/JW/service/RoleSerivce.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/java/JW/service/SpecialtyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/java/JW/service/SpecialtyService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/java/JW/service/TeacherService.java" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/java/JW/service/TeacherService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/java/JW/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/java/JW/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/java/JW/service/impl/CollegeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/java/JW/service/impl/CollegeServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/java/JW/service/impl/CourseServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/java/JW/service/impl/CourseServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/java/JW/service/impl/FunctionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/java/JW/service/impl/FunctionServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/java/JW/service/impl/RoleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/java/JW/service/impl/RoleServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/java/JW/service/impl/SpecialtyServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/java/JW/service/impl/SpecialtyServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/java/JW/service/impl/TeacherServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/java/JW/service/impl/TeacherServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/java/JW/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/java/JW/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/resources/mybatis/SqlMapConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/resources/mybatis/SqlMapConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/WEB-INF/pages/admin/function.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/WEB-INF/pages/admin/function.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/WEB-INF/pages/admin/function_add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/WEB-INF/pages/admin/function_add.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/WEB-INF/pages/admin/role.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/WEB-INF/pages/admin/role.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/WEB-INF/pages/admin/role_add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/WEB-INF/pages/admin/role_add.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/WEB-INF/pages/base/classes.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/WEB-INF/pages/base/classes.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/WEB-INF/pages/base/college.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/WEB-INF/pages/base/college.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/WEB-INF/pages/base/course.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/WEB-INF/pages/base/course.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/WEB-INF/pages/base/courseInfo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/WEB-INF/pages/base/courseInfo.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/WEB-INF/pages/base/specialty.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/WEB-INF/pages/base/specialty.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/WEB-INF/pages/base/teacher.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/WEB-INF/pages/base/teacher.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/WEB-INF/pages/common/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/WEB-INF/pages/common/home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/WEB-INF/pages/common/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/WEB-INF/pages/common/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/WEB-INF/pages/student/PersonScore.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/WEB-INF/pages/student/PersonScore.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/WEB-INF/pages/teacher/course.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/WEB-INF/pages/teacher/course.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/WEB-INF/pages/teacher/score.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/WEB-INF/pages/teacher/score.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/locale/easyui-lang-zh_CN.js" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/locale/easyui-lang-zh_CN.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/plugins/jquery.accordion.js" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/plugins/jquery.accordion.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/plugins/jquery.calendar.js" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/plugins/jquery.calendar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/plugins/jquery.combo.js" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/plugins/jquery.combo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/plugins/jquery.combobox.js" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/plugins/jquery.combobox.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/plugins/jquery.combogrid.js" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/plugins/jquery.combogrid.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/plugins/jquery.combotree.js" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/plugins/jquery.combotree.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/plugins/jquery.datagrid.js" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/plugins/jquery.datagrid.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/plugins/jquery.datebox.js" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/plugins/jquery.datebox.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/plugins/jquery.datetimebox.js" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/plugins/jquery.datetimebox.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/plugins/jquery.dialog.js" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/plugins/jquery.dialog.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/plugins/jquery.draggable.js" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/plugins/jquery.draggable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/plugins/jquery.droppable.js" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/plugins/jquery.droppable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/plugins/jquery.form.js" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/plugins/jquery.form.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/plugins/jquery.layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/plugins/jquery.layout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/plugins/jquery.linkbutton.js" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/plugins/jquery.linkbutton.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/plugins/jquery.menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/plugins/jquery.menu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/plugins/jquery.menubutton.js" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/plugins/jquery.menubutton.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/plugins/jquery.messager.js" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/plugins/jquery.messager.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/plugins/jquery.numberbox.js" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/plugins/jquery.numberbox.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/plugins/jquery.numberspinner.js" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/plugins/jquery.numberspinner.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/plugins/jquery.pagination.js" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/plugins/jquery.pagination.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/plugins/jquery.panel.js" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/plugins/jquery.panel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/plugins/jquery.parser.js" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/plugins/jquery.parser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/plugins/jquery.progressbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/plugins/jquery.progressbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/plugins/jquery.propertygrid.js" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/plugins/jquery.propertygrid.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/plugins/jquery.resizable.js" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/plugins/jquery.resizable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/plugins/jquery.searchbox.js" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/plugins/jquery.searchbox.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/plugins/jquery.slider.js" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/plugins/jquery.slider.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/plugins/jquery.spinner.js" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/plugins/jquery.spinner.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/plugins/jquery.splitbutton.js" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/plugins/jquery.splitbutton.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/plugins/jquery.tabs.js" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/plugins/jquery.tabs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/plugins/jquery.timespinner.js" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/plugins/jquery.timespinner.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/plugins/jquery.tree.js" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/plugins/jquery.tree.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/plugins/jquery.treegrid.js" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/plugins/jquery.treegrid.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/plugins/jquery.validatebox.js" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/plugins/jquery.validatebox.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/plugins/jquery.window.js" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/plugins/jquery.window.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/src/easyloader.js" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/src/easyloader.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/src/jquery.accordion.js" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/src/jquery.accordion.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/src/jquery.calendar.js" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/src/jquery.calendar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/src/jquery.combobox.js" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/src/jquery.combobox.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/src/jquery.datebox.js" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/src/jquery.datebox.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/src/jquery.draggable.js" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/src/jquery.draggable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/src/jquery.droppable.js" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/src/jquery.droppable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/src/jquery.form.js" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/src/jquery.form.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/src/jquery.linkbutton.js" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/src/jquery.linkbutton.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/src/jquery.menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/src/jquery.menu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/src/jquery.parser.js" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/src/jquery.parser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/src/jquery.progressbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/src/jquery.progressbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/src/jquery.propertygrid.js" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/src/jquery.propertygrid.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/src/jquery.resizable.js" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/src/jquery.resizable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/src/jquery.slider.js" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/src/jquery.slider.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/src/jquery.tabs.js" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/src/jquery.tabs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/src/jquery.window.js" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/src/jquery.window.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/black/accordion.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/black/accordion.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/black/calendar.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/black/calendar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/black/combo.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/black/combo.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/black/combobox.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/black/combobox.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/black/datagrid.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/black/datagrid.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/black/datebox.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/black/datebox.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/black/dialog.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/black/dialog.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/black/easyui.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/black/easyui.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/black/images/datagrid_icons.png" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/black/images/datagrid_icons.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/black/images/messager_icons.png" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/black/images/messager_icons.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/black/images/pagination_icons.png" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/black/images/pagination_icons.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/black/images/spinner_arrows.png" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/black/images/spinner_arrows.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/black/layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/black/layout.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/black/linkbutton.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/black/linkbutton.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/black/menu.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/black/menu.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/black/menubutton.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/black/menubutton.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/black/messager.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/black/messager.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/black/pagination.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/black/pagination.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/black/panel.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/black/panel.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/black/progressbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/black/progressbar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/black/propertygrid.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/black/propertygrid.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/black/searchbox.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/black/searchbox.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/black/slider.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/black/slider.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/black/spinner.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/black/spinner.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/black/splitbutton.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/black/splitbutton.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/black/tabs.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/black/tabs.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/black/tree.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/black/tree.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/black/validatebox.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/black/validatebox.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/black/window.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/black/window.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/bootstrap/accordion.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/bootstrap/accordion.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/bootstrap/calendar.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/bootstrap/calendar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/bootstrap/combo.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/bootstrap/combo.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/bootstrap/combobox.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/bootstrap/combobox.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/bootstrap/datagrid.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/bootstrap/datagrid.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/bootstrap/datebox.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/bootstrap/datebox.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/bootstrap/dialog.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/bootstrap/dialog.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/bootstrap/easyui.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/bootstrap/easyui.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/bootstrap/images/datagrid_icons.png" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/bootstrap/images/datagrid_icons.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/bootstrap/images/messager_icons.png" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/bootstrap/images/messager_icons.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/bootstrap/images/pagination_icons.png" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/bootstrap/images/pagination_icons.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/bootstrap/images/spinner_arrows.png" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/bootstrap/images/spinner_arrows.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/bootstrap/layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/bootstrap/layout.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/bootstrap/linkbutton.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/bootstrap/linkbutton.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/bootstrap/menu.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/bootstrap/menu.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/bootstrap/menubutton.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/bootstrap/menubutton.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/bootstrap/messager.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/bootstrap/messager.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/bootstrap/pagination.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/bootstrap/pagination.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/bootstrap/panel.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/bootstrap/panel.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/bootstrap/progressbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/bootstrap/progressbar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/bootstrap/propertygrid.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/bootstrap/propertygrid.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/bootstrap/searchbox.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/bootstrap/searchbox.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/bootstrap/slider.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/bootstrap/slider.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/bootstrap/spinner.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/bootstrap/spinner.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/bootstrap/splitbutton.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/bootstrap/splitbutton.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/bootstrap/tabs.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/bootstrap/tabs.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/bootstrap/tree.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/bootstrap/tree.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/bootstrap/validatebox.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/bootstrap/validatebox.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/bootstrap/window.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/bootstrap/window.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/default/accordion.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/default/accordion.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/default/calendar.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/default/calendar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/default/combo.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/default/combo.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/default/combobox.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/default/combobox.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/default/datagrid.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/default/datagrid.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/default/datebox.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/default/datebox.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/default/dialog.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/default/dialog.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/default/easyui.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/default/easyui.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/default/images/datagrid_icons.png" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/default/images/datagrid_icons.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/default/images/messager_icons.png" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/default/images/messager_icons.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/default/images/pagination_icons.png" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/default/images/pagination_icons.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/default/images/spinner_arrows.png" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/default/images/spinner_arrows.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/default/layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/default/layout.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/default/linkbutton.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/default/linkbutton.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/default/menu.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/default/menu.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/default/menubutton.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/default/menubutton.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/default/messager.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/default/messager.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/default/pagination.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/default/pagination.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/default/panel.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/default/panel.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/default/progressbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/default/progressbar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/default/propertygrid.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/default/propertygrid.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/default/searchbox.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/default/searchbox.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/default/slider.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/default/slider.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/default/spinner.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/default/spinner.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/default/splitbutton.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/default/splitbutton.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/default/tabs.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/default/tabs.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/default/tree.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/default/tree.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/default/validatebox.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/default/validatebox.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/default/window.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/default/window.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/gray/accordion.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/gray/accordion.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/gray/calendar.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/gray/calendar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/gray/combo.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/gray/combo.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/gray/combobox.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/gray/combobox.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/gray/datagrid.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/gray/datagrid.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/gray/datebox.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/gray/datebox.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/gray/dialog.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/gray/dialog.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/gray/easyui.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/gray/easyui.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/gray/images/datagrid_icons.png" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/gray/images/datagrid_icons.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/gray/images/messager_icons.png" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/gray/images/messager_icons.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/gray/images/pagination_icons.png" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/gray/images/pagination_icons.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/gray/images/spinner_arrows.png" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/gray/images/spinner_arrows.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/gray/layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/gray/layout.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/gray/linkbutton.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/gray/linkbutton.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/gray/menu.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/gray/menu.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/gray/menubutton.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/gray/menubutton.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/gray/messager.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/gray/messager.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/gray/pagination.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/gray/pagination.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/gray/panel.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/gray/panel.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/gray/progressbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/gray/progressbar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/gray/propertygrid.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/gray/propertygrid.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/gray/searchbox.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/gray/searchbox.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/gray/slider.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/gray/slider.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/gray/spinner.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/gray/spinner.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/gray/splitbutton.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/gray/splitbutton.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/gray/tabs.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/gray/tabs.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/gray/tree.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/gray/tree.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/gray/validatebox.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/gray/validatebox.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/gray/window.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/gray/window.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/icon.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/icon.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/metro/accordion.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/metro/accordion.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/metro/calendar.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/metro/calendar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/metro/combo.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/metro/combo.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/metro/combobox.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/metro/combobox.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/metro/datagrid.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/metro/datagrid.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/metro/datebox.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/metro/datebox.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/metro/dialog.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/metro/dialog.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/metro/easyui.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/metro/easyui.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/metro/images/datagrid_icons.png" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/metro/images/datagrid_icons.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/metro/images/messager_icons.png" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/metro/images/messager_icons.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/metro/images/pagination_icons.png" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/metro/images/pagination_icons.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/metro/images/spinner_arrows.png" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/metro/images/spinner_arrows.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/metro/layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/metro/layout.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/metro/linkbutton.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/metro/linkbutton.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/metro/menu.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/metro/menu.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/metro/menubutton.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/metro/menubutton.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/metro/messager.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/metro/messager.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/metro/pagination.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/metro/pagination.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/metro/panel.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/metro/panel.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/metro/progressbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/metro/progressbar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/metro/propertygrid.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/metro/propertygrid.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/metro/searchbox.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/metro/searchbox.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/metro/slider.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/metro/slider.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/metro/spinner.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/metro/spinner.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/metro/splitbutton.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/metro/splitbutton.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/metro/tabs.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/metro/tabs.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/metro/tree.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/metro/tree.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/metro/validatebox.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/metro/validatebox.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/metro/window.css" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/js/easyui/themes/metro/window.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/json/menu.json" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/json/menu.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/src/main/webapp/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/target/classes/JW/controller/ClassesAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/target/classes/JW/controller/ClassesAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/target/classes/JW/controller/CollegeAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/target/classes/JW/controller/CollegeAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/target/classes/JW/controller/CourseAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/target/classes/JW/controller/CourseAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/target/classes/JW/controller/FunctionAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/target/classes/JW/controller/FunctionAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/target/classes/JW/controller/RoleAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/target/classes/JW/controller/RoleAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/target/classes/JW/controller/ScoreAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/target/classes/JW/controller/ScoreAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/target/classes/JW/controller/SpecialtyAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/target/classes/JW/controller/SpecialtyAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/target/classes/JW/controller/TeacherAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/target/classes/JW/controller/TeacherAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/target/classes/JW/controller/UserAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/target/classes/JW/controller/UserAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/target/classes/JW/mapper/AuthFunctionMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/target/classes/JW/mapper/AuthFunctionMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/target/classes/JW/mapper/AuthFunctionMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/target/classes/JW/mapper/AuthFunctionMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/target/classes/JW/mapper/AuthRoleMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/target/classes/JW/mapper/AuthRoleMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/target/classes/JW/mapper/AuthRoleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/target/classes/JW/mapper/AuthRoleMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/target/classes/JW/mapper/TCourseMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/target/classes/JW/mapper/TCourseMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/target/classes/JW/mapper/TCourseMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/target/classes/JW/mapper/TCourseMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/target/classes/JW/mapper/TScoreMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/target/classes/JW/mapper/TScoreMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/target/classes/JW/mapper/TSpecialtyMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/target/classes/JW/mapper/TSpecialtyMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/target/classes/JW/mapper/TTeacherMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/target/classes/JW/mapper/TTeacherMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/target/classes/JW/mapper/TTeacherMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/target/classes/JW/mapper/TTeacherMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/target/classes/JW/pojo/AuthRole.class" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/target/classes/JW/pojo/AuthRole.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/target/classes/JW/pojo/StudentRoleExample$Criteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/target/classes/JW/pojo/StudentRoleExample$Criteria.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/target/classes/JW/pojo/StudentRoleExample$Criterion.class" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/target/classes/JW/pojo/StudentRoleExample$Criterion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/target/classes/JW/pojo/StudentRoleExample$GeneratedCriteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/target/classes/JW/pojo/StudentRoleExample$GeneratedCriteria.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/target/classes/JW/pojo/StudentRoleExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/target/classes/JW/pojo/StudentRoleExample.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/target/classes/JW/pojo/TCourse.class" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/target/classes/JW/pojo/TCourse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/target/classes/JW/pojo/TTeacher.class" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/target/classes/JW/pojo/TTeacher.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/target/classes/JW/service/CollegeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/target/classes/JW/service/CollegeService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/target/classes/JW/service/FunctionService.class" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/target/classes/JW/service/FunctionService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/target/classes/JW/service/RoleSerivce.class" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/target/classes/JW/service/RoleSerivce.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/target/classes/JW/service/SpecialtyService.class" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/target/classes/JW/service/SpecialtyService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/target/classes/JW/service/TeacherService.class" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/target/classes/JW/service/TeacherService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/target/classes/JW/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/target/classes/JW/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/target/classes/JW/service/impl/CollegeServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/target/classes/JW/service/impl/CollegeServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/target/classes/JW/service/impl/CourseServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/target/classes/JW/service/impl/CourseServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/target/classes/JW/service/impl/FunctionServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/target/classes/JW/service/impl/FunctionServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/target/classes/JW/service/impl/RoleServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/target/classes/JW/service/impl/RoleServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/target/classes/JW/service/impl/SpecialtyServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/target/classes/JW/service/impl/SpecialtyServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/target/classes/JW/service/impl/TeacherServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/target/classes/JW/service/impl/TeacherServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/target/classes/JW/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/target/classes/JW/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/target/classes/mybatis/SqlMapConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/target/classes/mybatis/SqlMapConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/target/tomcat/logs/access_log.2019-10-16" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/pages/admin/function_005fadd_jsp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/pages/admin/function_005fadd_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/pages/admin/function_jsp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/pages/admin/function_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/pages/admin/role_jsp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/pages/admin/role_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/pages/base/courseInfo_jsp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/pages/base/courseInfo_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/pages/base/teacher_jsp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/pages/base/teacher_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/pages/common/home_jsp.class" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/pages/common/home_jsp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/pages/common/home_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/pages/common/home_jsp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/pages/common/index_jsp.class" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/pages/common/index_jsp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/pages/common/index_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/pages/common/index_jsp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/pages/portal/bug_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/pages/portal/bug_jsp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/pages/portal/daiban_jsp.class" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/pages/portal/daiban_jsp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/pages/portal/daiban_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/pages/portal/daiban_jsp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/pages/portal/gonggao_jsp.class" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/pages/portal/gonggao_jsp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/pages/portal/gonggao_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/pages/portal/gonggao_jsp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/pages/portal/yujing_jsp.class" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/pages/portal/yujing_jsp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/pages/portal/yujing_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/pages/portal/yujing_jsp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/login_jsp.class" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/login_jsp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/login_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/login_jsp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-project/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/validatecode_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/jw-project/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/validatecode_jsp.java" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/jw-parent/bin/" />
+    <ignored path="$PROJECT_DIR$/RemoteSystemsTempFiles/bin/" />
+    <ignored path="$PROJECT_DIR$/jw-parent/target/" />
+    <ignored path="$PROJECT_DIR$/jw-common/target/" />
+    <ignored path="$PROJECT_DIR$/pagehelper/target/" />
+    <ignored path="$PROJECT_DIR$/jw-project/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jw-project/src/main/webapp/WEB-INF/pages/teacher/course.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="350">
+              <caret line="86" column="44" lean-forward="true" selection-start-line="86" selection-start-column="44" selection-end-line="86" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jw-project/src/main/webapp/WEB-INF/pages/common/home.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-263">
+              <caret line="47" column="30" selection-start-line="47" selection-start-column="30" selection-end-line="47" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jw-project/src/main/webapp/WEB-INF/pages/common/index.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="287">
+              <caret line="185" column="46" selection-start-line="185" selection-start-column="46" selection-end-line="185" selection-end-column="46" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#iframe#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#iframe#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#1;n#tr#2;n#tbody#0;n#table#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/jw-project/src/main/java/JW/shiro/EMSshiro.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="350">
+              <caret line="72" column="44" lean-forward="true" selection-start-line="72" selection-start-column="44" selection-end-line="72" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jw-project/src/main/java/JW/controller/ClassesAction.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jw-project/src/main/java/JW/controller/CourseAction.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="457">
+              <caret line="86" column="30" selection-start-line="86" selection-start-column="25" selection-end-line="86" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jw-project/src/main/java/JW/controller/CStatusController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="169">
+              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jw-project/src/main/java/JW/controller/FunctionAction.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="412">
+              <caret line="52" column="24" selection-start-line="52" selection-start-column="24" selection-end-line="52" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jw-project/src/main/java/JW/controller/HomeAction.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="19">
+              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jw-project/src/main/java/JW/controller/CollegeAction.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>schedule</find>
+      <find>findAll</find>
+      <find>findStudent</find>
+      <find>学分</find>
+      <find>team</find>
+      <find>ManyResultMap</find>
+      <find>tname</find>
+      <find>a</find>
+      <find>开合</find>
+      <find>load</find>
+      <find>ajaxUnion</find>
+      <find>选择学院</find>
+      <find>college</find>
+      <find>specialtyData</find>
+      <find>websocke</find>
+      <find>home</find>
+      <find>导入</find>
+      <find>未提交</find>
+      <find>未</find>
+      <find>addStaffWindow</find>
+      <find>insert</find>
+      <find>update</find>
+      <find>delete</find>
+      <find>select * from</find>
+      <find>ELECT * FROM (`t_score`</find>
+      <find>score</find>
+      <find>sche</find>
+      <find>课表</find>
+      <find>find</find>
+      <find>center</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>redirect:/page/base</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/jw-project/src/main/java/JW/controller/CollegeAction.java" />
+        <option value="$PROJECT_DIR$/jw-project/src/main/webapp/WEB-INF/pages/base/college.jsp" />
+        <option value="$PROJECT_DIR$/jw-project/src/main/java/JW/controller/ClassesAction.java" />
+        <option value="$PROJECT_DIR$/jw-project/src/main/java/JW/controller/SpecialtyAction.java" />
+        <option value="$PROJECT_DIR$/jw-project/src/main/java/JW/service/SpecialtyService.java" />
+        <option value="$PROJECT_DIR$/jw-project/src/main/java/JW/service/impl/SpecialtyServiceImpl.java" />
+        <option value="$PROJECT_DIR$/jw-project/src/main/webapp/WEB-INF/pages/base/specialty.jsp" />
+        <option value="$PROJECT_DIR$/jw-project/src/main/webapp/WEB-INF/pages/admin/role.jsp" />
+        <option value="$PROJECT_DIR$/jw-project/src/main/webapp/WEB-INF/pages/admin/function.jsp" />
+        <option value="$PROJECT_DIR$/jw-project/src/main/webapp/WEB-INF/pages/teacher/score.jsp" />
+        <option value="$PROJECT_DIR$/jw-project/src/main/webapp/WEB-INF/pages/teacher/course.jsp" />
+        <option value="$PROJECT_DIR$/jw-project/src/main/java/JW/mapper/TCourseMapper.java" />
+        <option value="$PROJECT_DIR$/jw-project/src/main/java/JW/pojo/StudentRoleExample.java" />
+        <option value="$PROJECT_DIR$/jw-project/src/main/webapp/WEB-INF/pages/base/course.jsp" />
+        <option value="$PROJECT_DIR$/jw-project/src/main/java/JW/controller/ScoreAction.java" />
+        <option value="$PROJECT_DIR$/jw-project/src/main/webapp/WEB-INF/pages/student/PersonScore.jsp" />
+        <option value="$PROJECT_DIR$/jw-project/src/main/java/JW/service/impl/CStatusService.java" />
+        <option value="$PROJECT_DIR$/jw-project/src/main/java/JW/service/impl/TeamService.java" />
+        <option value="$PROJECT_DIR$/jw-project/src/main/java/JW/service/impl/WayService.java" />
+        <option value="$PROJECT_DIR$/jw-project/src/main/java/JW/controller/TeamController.java" />
+        <option value="$PROJECT_DIR$/jw-project/src/main/java/JW/controller/CStatusController.java" />
+        <option value="$PROJECT_DIR$/jw-project/src/main/java/JW/controller/WayController.java" />
+        <option value="$PROJECT_DIR$/jw-project/src/main/java/JW/service/impl/CourseServiceImpl.java" />
+        <option value="$PROJECT_DIR$/jw-project/src/main/java/JW/mapper/TCourseMapper.xml" />
+        <option value="$PROJECT_DIR$/jw-project/src/main/java/JW/controller/CourseAction.java" />
+        <option value="$PROJECT_DIR$/jw-project/src/main/java/JW/service/TeacherService.java" />
+        <option value="$PROJECT_DIR$/jw-project/src/main/java/JW/service/impl/TeacherServiceImpl.java" />
+        <option value="$PROJECT_DIR$/jw-project/src/main/java/JW/mapper/TTeacherMapper.java" />
+        <option value="$PROJECT_DIR$/jw-project/src/main/java/JW/mapper/TTeacherMapper.xml" />
+        <option value="$PROJECT_DIR$/jw-project/src/main/webapp/WEB-INF/pages/common/home.jsp" />
+        <option value="$PROJECT_DIR$/jw-project/src/main/webapp/WEB-INF/pages/base/courseInfo.jsp" />
+        <option value="$PROJECT_DIR$/jw-project/src/main/webapp/WEB-INF/pages/base/teacher.jsp" />
+        <option value="$PROJECT_DIR$/jw-project/src/main/java/JW/controller/TeacherAction.java" />
+        <option value="$PROJECT_DIR$/jw-project/src/main/webapp/WEB-INF/pages/portal/yujing.jsp" />
+        <option value="$PROJECT_DIR$/jw-project/src/main/webapp/WEB-INF/pages/portal/gonggao.jsp" />
+        <option value="$PROJECT_DIR$/jw-project/src/main/webapp/WEB-INF/pages/portal/daiban.jsp" />
+        <option value="$PROJECT_DIR$/jw-project/src/main/java/JW/service/impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/jw-project/src/main/java/JW/controller/UserAction.java" />
+        <option value="$PROJECT_DIR$/jw-project/src/main/webapp/WEB-INF/pages/base/classes.jsp" />
+        <option value="$PROJECT_DIR$/jw-project/src/main/java/JW/pojo/TCourse.java" />
+        <option value="$PROJECT_DIR$/jw-project/src/main/webapp/WEB-INF/pages/admin/userinfo.jsp" />
+        <option value="$PROJECT_DIR$/jw-project/src/main/java/JW/mapper/AuthFunctionMapper.xml" />
+        <option value="$PROJECT_DIR$/jw-project/src/main/java/JW/controller/RoleAction.java" />
+        <option value="$PROJECT_DIR$/jw-project/src/main/java/JW/controller/FunctionAction.java" />
+        <option value="$PROJECT_DIR$/jw-project/src/main/java/JW/pojo/TTeacher.java" />
+        <option value="$PROJECT_DIR$/jw-project/src/main/java/JW/service/impl/RoleServiceImpl.java" />
+        <option value="$PROJECT_DIR$/jw-project/src/main/java/JW/service/impl/FunctionServiceImpl.java" />
+        <option value="$PROJECT_DIR$/jw-project/src/main/webapp/WEB-INF/pages/admin/function_add.jsp" />
+        <option value="$PROJECT_DIR$/jw-project/src/main/webapp/WEB-INF/pages/student/schedule.jsp" />
+        <option value="$PROJECT_DIR$/jw-project/src/main/java/JW/mapper/TScoreMapper.xml" />
+        <option value="$PROJECT_DIR$/jw-project/src/main/webapp/WEB-INF/pages/common/index.jsp" />
+      </list>
+    </option>
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\编程软件\maven\repository" />
+        <option name="mavenHome" value="D:/编程软件/maven/apache-maven-3.6.0" />
+        <option name="userSettingsFile" value="D:\编程软件\maven\apache-maven-3.6.0\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="pagehelper" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="pagehelper" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="953" />
+    <option name="width" value="974" />
+    <option name="height" value="1047" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Graduation project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jw-project" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Graduation project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jw-project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Graduation project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jw-project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Graduation project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jw-project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Graduation project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jw-project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="JW" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Graduation project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jw-project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="JW" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Graduation project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jw-project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="JW" type="462c0819:PsiDirectoryNode" />
+              <item name="pojo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Graduation project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jw-project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="JW" type="462c0819:PsiDirectoryNode" />
+              <item name="shiro" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Graduation project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jw-project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Graduation project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jw-project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Graduation project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jw-project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Graduation project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jw-project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Graduation project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jw-project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Graduation project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jw-project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Graduation project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jw-project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Graduation project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jw-project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Graduation project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jw-project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="portal" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Graduation project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jw-project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="student" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Graduation project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jw-project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="teacher" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="javascript.nodejs.core.library.configured.version" value="10.15.3" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/jw-project/src/main/webapp/WEB-INF/pages" />
+    <property name="node.js.detected.package.jscs" value="true" />
+    <property name="node.js.path.for.package.jscs" value="project" />
+    <property name="node.js.selected.package.jscs" value="" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="D:/English soft/Nodejs/node" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.16384777" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="settings.typescriptcompiler" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\code\javaEE code\Graduation project\jw-project\src\main\webapp\WEB-INF\pages" />
+      <recent name="D:\code\javaEE code\Graduation project\jw-project\src\main\java\JW\mapper" />
+      <recent name="D:\code\javaEE code\Graduation project\jw-project\src\main\java\JW\pojo" />
+      <recent name="D:\code\javaEE code\Graduation project\jw-project\src\main\webapp\js\easyui" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Maven.jw-project [clean,tomcat7:run]">
+    <configuration name="jw-project [clean,tomcat7:run]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean" />
+                <option value="tomcat7:run" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$/jw-project" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="Tomcat 8.5.39" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.39" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="jw-project:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_Graduation_project_2" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="50232" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="jw-project:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Maven.jw-project [clean,tomcat7:run]" />
+      <item itemvalue="Tomcat Server.Tomcat 8.5.39" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="aff0c7fe-02c9-4137-85be-a1e66322169c" name="Default Changelist" comment="" />
+      <created>1571204876233</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1571204876233</updated>
+      <workItem from="1571204882987" duration="25150000" />
+      <workItem from="1571272754396" duration="18859000" />
+      <workItem from="1571294908754" duration="16806000" />
+      <workItem from="1571359501028" duration="5204000" />
+      <workItem from="1571383306628" duration="596000" />
+      <workItem from="1571411666459" duration="8171000" />
+      <workItem from="1571442431871" duration="1521000" />
+      <workItem from="1571444092733" duration="2939000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="79246000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49819493" visible="true" weight="0.26812366" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Capture Tool" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Web" order="6" sideWeight="0.50180507" side_tool="true" weight="0.2553305" />
+      <window_info id="Designer" order="7" />
+      <window_info anchor="bottom" id="Spring" order="0" />
+      <window_info anchor="bottom" id="Terminal" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49946696" weight="0.4186551" />
+      <window_info anchor="bottom" id="Docker" order="4" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.50053304" side_tool="true" weight="0.3991323" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.329718" />
+      <window_info anchor="bottom" id="Java Enterprise" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Application Servers" order="11" weight="0.329718" />
+      <window_info anchor="bottom" id="Message" order="12" />
+      <window_info anchor="bottom" id="Find" order="13" />
+      <window_info anchor="bottom" id="Cvs" order="14" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="15" weight="0.4" />
+      <window_info anchor="right" id="Palette" order="0" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="JSF" order="2" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Palette&#9;" order="5" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="right" id="CDI" order="7" />
+      <window_info anchor="right" id="Bean Validation" order="8" />
+      <window_info anchor="right" id="Maven" order="9" weight="0.32995737" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="10" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="11" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="MavenRunConfiguration">
+        <watch expression="((ScoreAction)this).scoreService" custom="JW.controller.ScoreAction" />
+        <watch expression="((ScoreAction)this).scoreService" language="JAVA" custom="JW.controller.ScoreAction" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/jw-project/src/main/java/JW/controller/TeacherAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="47" selection-start-line="47" selection-end-line="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.2.8/mybatis-3.2.8-sources.jar!/org/apache/ibatis/reflection/invoker/MethodInvoker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jw-project/src/main/webapp/WEB-INF/pages/base/teacher.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-213">
+          <caret line="94" column="8" selection-start-line="94" selection-start-column="8" selection-end-line="94" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jw-project/src/main/java/JW/pojo/TTeacherExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jw-project/src/main/java/JW/mapper/TExamwayMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jw-project/src/main/java/JW/mapper/TExamwayMapper.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jw-project/src/main/java/JW/mapper/TCstatusMapper.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/cglib/cglib/2.2.2/cglib-2.2.2.jar!/net/sf/cglib/proxy/MethodProxy.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="104" selection-start-line="104" selection-end-line="104" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jw-project/src/main/webapp/WEB-INF/pages/admin/function.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="620">
+          <caret line="104" column="69" selection-start-line="104" selection-start-column="55" selection-end-line="104" selection-end-column="69" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jw-project/src/main/java/JW/mapper/AuthFunctionMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jw-project/src/main/java/JW/mapper/AuthFunctionMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="113" column="30" selection-start-line="107" selection-start-column="6" selection-end-line="113" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jw-project/src/main/java/JW/service/RoleSerivce.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jw-project/src/main/java/JW/controller/RoleAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jw-project/src/main/java/JW/service/impl/RoleServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="51" column="35" selection-start-line="51" selection-start-column="35" selection-end-line="51" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jw-project/src/main/java/JW/pojo/TTeacher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="24" column="27" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jw-project/src/main/resources/spring/springmvc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-659" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jw-project/src/main/resources/spring/ehcache.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jw-project/src/main/java/JW/service/FunctionService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="14" column="32" lean-forward="true" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jw-project/src/main/java/JW/mapper/AuthFunctionMapperCustom.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jw-project/src/main/java/JW/mapper/AuthFunctionMapperCustom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="34" column="4" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jw-project/src/main/resources/spring/applicationContext-service.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jw-project/src/main/resources/spring/applicationContext-trans.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="72" column="38" selection-start-line="72" selection-start-column="38" selection-end-line="72" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jw-project/src/main/java/JW/service/impl/FunctionServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="61" selection-start-line="61" selection-end-line="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jw-project/src/main/java/JW/pojo/AuthFunction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" column="23" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jw-project/src/main/java/JW/controller/LoginAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="109" column="35" selection-start-line="109" selection-start-column="35" selection-end-line="109" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jw-project/src/main/webapp/WEB-INF/pages/student/schedule.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="380" column="38" selection-start-line="380" selection-start-column="38" selection-end-line="380" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jw-project/src/main/java/JW/mapper/TCourseMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jw-project/src/main/java/JW/mapper/TCourseMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2750">
+          <caret line="110" column="23" selection-start-line="110" selection-start-column="23" selection-end-line="110" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jw-project/src/main/java/JW/mapper/TScoreMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4375">
+          <caret line="175" column="55" selection-start-line="175" selection-start-column="55" selection-end-line="175" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jw-project/src/main/java/JW/mapper/AuthRoleMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2625">
+          <caret line="105" column="39" selection-start-line="105" selection-start-column="39" selection-end-line="105" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jw-project/src/main/java/JW/mapper/StudentRoleMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jw-project/src/main/java/JW/mapper/TStudentMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" column="39" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jw-project/src/main/java/JW/controller/ScoreAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3275">
+          <caret line="153" column="51" selection-start-line="153" selection-start-column="51" selection-end-line="153" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jw-project/src/main/java/JW/service/impl/ScoreServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="975">
+          <caret line="60" column="46" selection-start-line="60" selection-start-column="46" selection-end-line="60" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jw-project/src/main/java/JW/controller/StudentAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1550">
+          <caret line="89" column="45" selection-start-line="89" selection-start-column="45" selection-end-line="89" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jw-project/src/main/java/JW/mapper/AuthRoleMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jw-project/src/main/webapp/WEB-INF/pages/admin/role.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jw-project/src/main/webapp/WEB-INF/pages/admin/function_add.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="682">
+          <caret line="70" column="22" selection-start-line="70" selection-start-column="22" selection-end-line="70" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jw-project/src/main/webapp/WEB-INF/pages/admin/role_add.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1725" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jw-project/src/main/webapp/WEB-INF/pages/student/PersonScore.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jw-project/src/main/webapp/WEB-INF/pages/teacher/score.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jw-project/src/main/webapp/WEB-INF/pages/teacher/course.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="86" column="44" lean-forward="true" selection-start-line="86" selection-start-column="44" selection-end-line="86" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jw-project/src/main/java/JW/controller/ClassesAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jw-project/src/main/java/JW/controller/CollegeAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jw-project/src/main/java/JW/controller/CourseAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="457">
+          <caret line="86" column="30" selection-start-line="86" selection-start-column="25" selection-end-line="86" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jw-project/src/main/java/JW/controller/CStatusController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jw-project/src/main/java/JW/controller/FunctionAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="412">
+          <caret line="52" column="24" selection-start-line="52" selection-start-column="24" selection-end-line="52" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jw-project/src/main/java/JW/controller/HomeAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jw-project/src/main/webapp/WEB-INF/pages/common/home.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-263">
+          <caret line="47" column="30" selection-start-line="47" selection-start-column="30" selection-end-line="47" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jw-project/src/main/webapp/WEB-INF/pages/common/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="185" column="46" selection-start-line="185" selection-start-column="46" selection-end-line="185" selection-end-column="46" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#iframe#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#iframe#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#1;n#tr#2;n#tbody#0;n#table#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jw-project/src/main/java/JW/shiro/EMSshiro.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="72" column="44" lean-forward="true" selection-start-line="72" selection-start-column="44" selection-end-line="72" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>jw-project:war exploded</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Detection</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>jw-project</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: aopalliance:aopalliance:1.0</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

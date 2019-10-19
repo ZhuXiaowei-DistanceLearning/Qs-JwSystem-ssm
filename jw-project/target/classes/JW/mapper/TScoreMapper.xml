@@ -38,7 +38,7 @@
 		</association>
 		<association property="course" javaType="JW.pojo.TCourse">
 			<id column="id" property="id" jdbcType="VARCHAR" />
-			<result column="classname" property="name" jdbcType="VARCHAR" />
+			<result column="cousename" property="name" jdbcType="VARCHAR" />
 			<result column="credit" property="credit" jdbcType="INTEGER" />
 			<result column="classroom" property="classroom" jdbcType="VARCHAR" />
 			<result column="people" property="people" jdbcType="INTEGER" />
@@ -48,23 +48,41 @@
 			<result column="nature_id" property="natureId" jdbcType="VARCHAR" />
 			<result column="totalPeople" property="totalpeople" jdbcType="INTEGER" />
 			<association property="section" javaType="JW.pojo.TSection">
-				<result column="week" property="week" jdbcType="VARCHAR" />
-				<result column="section" property="section" jdbcType="VARCHAR" />
+				<result column="week" property="week" jdbcType="VARCHAR"/>
+				<result column="section" property="section" jdbcType="VARCHAR"/>
 			</association>
 			<association property="week" javaType="JW.pojo.TWeek">
-				<result column="time" property="time" jdbcType="VARCHAR" />
+				<result column="time" property="time" jdbcType="VARCHAR"/>
 			</association>
 			<association property="nature" javaType="JW.pojo.TNature">
-				<result column="name" property="name" jdbcType="VARCHAR" />
+				<result column="nname" property="name" jdbcType="VARCHAR"/>
 			</association>
 			<association property="teacher" javaType="JW.pojo.TTeacher">
-				<result column="tname" property="tname" jdbcType="VARCHAR" />
+				<result column="tname" property="tname" jdbcType="VARCHAR"/>
+			</association>
+			<association property="college" javaType="JW.pojo.TCollege">
+				<result column="cname" property="name" jdbcType="VARCHAR"/>
+			</association>
+
+			<association property="examway" javaType="JW.pojo.TExamway">
+				<result column="ename" property="name" jdbcType="VARCHAR"/>
+			</association>
+
+			<association property="cstatus" javaType="JW.pojo.TCstatus">
+				<result column="csname" property="name" jdbcType="VARCHAR"/>
+			</association>
+			<association property="team" javaType="JW.pojo.TTeam">
+				<result column="tmname" property="name" jdbcType="VARCHAR"/>
 			</association>
 		</association>
 	</resultMap>
 	<resultMap id="TeacherResultMap" type="JW.pojo.TScore">
 		<id column="Student_id" property="studentId" jdbcType="VARCHAR" />
 		<id column="course_id" property="courseId" jdbcType="VARCHAR" />
+		<result column="peaceTime" property="peacetime" jdbcType="VARCHAR" />
+		<result column="endTime" property="endtime" jdbcType="VARCHAR" />
+		<result column="score" property="score" jdbcType="VARCHAR" />
+		<result column="absent" property="absent" jdbcType="VARCHAR" />
 		<association property="students" javaType="JW.pojo.TStudent">
 			<id column="sid" property="sid" jdbcType="VARCHAR" />
 			<result column="password" property="password" jdbcType="VARCHAR" />
@@ -170,7 +188,7 @@
 	<!-- 查询出对应学生 -->
 	<select id="findAllCourseByStudentId" parameterType="java.lang.String"
 		resultMap="ManyResultMap">
-		SELECT * FROM (`t_score` s,`t_student` st,`t_section`
+		SELECT *,c.`name` cousename FROM (`t_score` s,`t_student` st,`t_section`
 		se,`t_week`
 		w,`t_nature` n,`t_classes` cl,`t_college` co,`t_specialty`
 		sp)
@@ -188,25 +206,31 @@
 	<!-- 查询学生个人成绩 -->
 	<select id="findStudentScore" parameterType="java.lang.String"
 		resultMap="ManyResultMap">
-		SELECT s.*,st.*,se.*,w.*,n.*,sp.`name` spname,co.`name`
-		cname,c.`name` classname
+		SELECT s.*,se.*,w.*,n.*,sp.`name` spname,co.`name`
+										  cname,c.`name` cousename,tm.`name` tmname,te.`name` ename,ct.`name` csname,n.`name` nname,c.`credit`
 		FROM (`t_score` s,`t_student` st,`t_section`
-		se,`t_week`
-		w,`t_nature`
-		n,`t_classes` cl,`t_college` co,`t_specialty`
-		sp)
-		LEFT JOIN `t_course` c
-		ON
-		s.`course_id`=c.`id`
+			se,`t_week`
+			w,`t_nature`
+			n,`t_classes` cl,`t_college` co,`t_specialty`
+			sp)
+				 LEFT JOIN `t_course` c
+						   ON
+							   s.`course_id`=c.`id`
+				 LEFT JOIN `t_examway` te
+						   ON te.`id` = c.`way_id`
+				 LEFT JOIN `t_cstatus` ct
+						   ON c.`cstatus_id` = ct.`id`
+				 LEFT JOIN `t_team` tm
+						   ON tm.`id` = c.`team_id`
 		WHERE
-		c.`nature_id`=n.`id` AND c.`week_id`=w.`id`
-		AND
-		c.`section_id`=se.`id`
-		AND st.`classes_id`=cl.`id` AND
-		cl.`specialty_id` =sp.`id` AND
-		sp.`college_id` = co.`id` AND
-		s.`Student_id`=st.`sid` AND
-		st.`sid`=#{value}
+			c.`nature_id`=n.`id` AND c.`week_id`=w.`id`
+		  AND
+			c.`section_id`=se.`id`
+		  AND st.`classes_id`=cl.`id` AND
+			cl.`specialty_id` =sp.`id` AND
+			sp.`college_id` = co.`id` AND
+			s.`Student_id`=st.`sid` AND
+			st.`sid`=#{value}
 	</select>
 	<!-- 添加课程成绩对应页面 -->
 	<select id="addStudentScore" parameterType="java.lang.String"

@@ -68,6 +68,10 @@
                 </td>
             </tr>
             <tr>
+                <td>代码</td>
+                <td><input type="text" name="code" class="easyui-validatebox" data-options="required:true"/></td>
+            </tr>
+            <tr>
                 <td>父功能点</td>
                 <td>
                     <input name="pid" class="easyui-combobox"
